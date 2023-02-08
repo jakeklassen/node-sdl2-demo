@@ -1,0 +1,21 @@
+{
+  "name": "node-sdl2-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@kmamal/gl": "6.0.1-1",
+    "@kmamal/sdl": "^0.6.8",
+    "canvas": "^2.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.13.0"
+  }
+}
