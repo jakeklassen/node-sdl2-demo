@@ -5,17 +5,18 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "packager --include '[ \"src/**/*.js\", \"assets/**/*\", \"package*.json\" ]' --out-dir dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@kmamal/gl": "6.0.1-1",
-    "@kmamal/sdl": "^0.6.8",
+    "@kmamal/sdl": "^0.6.9",
     "canvas": "^2.11.2"
   },
   "devDependencies": {
+    "@kmamal/packager": "^0.1.3",
     "@types/node": "^18.15.11"
   }
 }
