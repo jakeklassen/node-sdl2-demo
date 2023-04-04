@@ -3,7 +3,9 @@
     "noEmit": true,
     "allowJs": true,
     "checkJs": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "target": "ESNext",
+    "module": "NodeNext"
   },
   "include": ["src/**/*.js", "src/**/*.ts"]
 }

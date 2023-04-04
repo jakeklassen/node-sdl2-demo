@@ -13,7 +13,7 @@
   "dependencies": {
     "@kmamal/gl": "6.0.1-1",
     "@kmamal/sdl": "^0.6.8",
-    "canvas": "^2.11.0"
+    "canvas": "^2.11.2"
   },
   "devDependencies": {
     "@types/node": "^18.15.11"
