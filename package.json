@@ -12,8 +12,9 @@
   "license": "ISC",
   "dependencies": {
     "@kmamal/gl": "6.0.1-1",
-    "@kmamal/sdl": "^0.6.9",
-    "canvas": "^2.11.2"
+    "@kmamal/sdl": "^0.7.0",
+    "canvas": "^2.11.2",
+    "sharp": "^0.32.0"
   },
   "devDependencies": {
     "@kmamal/packager": "^0.1.3",
