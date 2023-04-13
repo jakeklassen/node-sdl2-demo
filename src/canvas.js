@@ -1,7 +1,8 @@
 import sdl from "@kmamal/sdl";
-import Canvas, { loadImage } from "canvas";
+import Canvas, { loadImage, registerFont } from "canvas";
 import { setTimeout } from "timers/promises";
-import sharp from "sharp";
+
+registerFont("assets/fonts/pico-8.ttf", { family: "PICO-8" });
 
 const ship = await loadImage("assets/player-ship.png");
 
@@ -274,6 +275,7 @@ while (!window.destroyed) {
     Math.floor(gameHeight / 2 - ship.height / 2) + 40,
   );
 
+  context.font = "5px PICO-8";
   context.fillStyle = "#ffffff";
   context.strokeStyle = "#ffffff";
   context.lineWidth = 1;
@@ -298,6 +300,10 @@ while (!window.destroyed) {
   fillCircle(context, 66, 30, 6, "#ffffff");
   fillCircle(context, 84, 30, 7, "#ffffff");
   fillCircle(context, 104, 30, 8, "#ffffff");
+
+  context.fillText("Hello World!", 10, 50);
+  context.fillStyle = "#ff004d";
+  context.fillText("GAME OVER", 10, 60);
 
   const buffer = canvas.toBuffer("raw");
 
