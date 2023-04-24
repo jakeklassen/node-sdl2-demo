@@ -1,8 +1,7 @@
 import sdl from "@kmamal/sdl";
-import Canvas, { loadImage, registerFont } from "canvas";
+import { createCanvas, loadImage } from "@napi-rs/canvas";
 import { setTimeout } from "timers/promises";
 
-registerFont("assets/fonts/pico-8.ttf", { family: "PICO-8" });
 const playerTexture = await loadImage("assets/player-ship.png");
 
 const gameWidth = 128;
@@ -16,7 +15,7 @@ const window = sdl.video.createWindow({
   vsync: true,
 });
 
-const canvas = Canvas.createCanvas(gameWidth, gameHeight);
+const canvas = createCanvas(gameWidth, gameHeight);
 
 const context = canvas.getContext("2d");
 context.imageSmoothingEnabled = false;
@@ -128,20 +127,16 @@ while (!window.destroyed) {
 
   context.clearRect(0, 0, canvas.width, canvas.height);
 
-  context.font = "5px PICO-8";
-  context.fillStyle = "#ffffff";
-  context.strokeStyle = "#ffffff";
-  context.lineWidth = 1;
+  context.filter = "blur(1px)";
+  context.drawImage(player1.sprite, player1.x | 0, player1.y | 0);
 
-  const textMetrics = context.measureText("Movement");
-  context.fillText("Movement", canvas.width / 2 - textMetrics.width / 2, 8);
-
+  context.filter = "none";
   context.drawImage(player1.sprite, player1.x | 0, player1.y | 0);
   context.drawImage(player2.sprite, player2.x, player2.y);
 
-  const buffer = canvas.toBuffer("raw");
+  const buffer = canvas.data();
 
-  window.render(gameWidth, gameHeight, gameWidth * 4, "bgra32", buffer);
+  window.render(gameWidth, gameHeight, gameWidth * 4, "rgba32", buffer);
 
   await setTimeout(0);
 
