@@ -11,6 +11,7 @@ const scale = 4;
 
 const window = sdl.video.createWindow({
   title: "SDL2 Movement",
+  accelerated: true,
   width: gameWidth * scale,
   height: gameHeight * scale,
   vsync: true,

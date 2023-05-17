@@ -5,8 +5,8 @@ dependencies:
     specifier: 6.0.1-1
     version: 6.0.1-1
   '@kmamal/sdl':
-    specifier: ^0.7.1
-    version: 0.7.1
+    specifier: ^0.7.3
+    version: 0.7.3
   '@napi-rs/canvas':
     specifier: ^0.1.40
     version: 0.1.40
@@ -31,8 +31,8 @@ devDependencies:
     specifier: ^0.1.3
     version: 0.1.3
   '@types/node':
-    specifier: ^20.1.2
-    version: 20.1.2
+    specifier: ^20.1.7
+    version: 20.1.7
 
 packages:
 
@@ -81,11 +81,11 @@ packages:
       tar: 6.1.13
     dev: true
 
-  /@kmamal/sdl@0.7.1:
-    resolution: {integrity: sha512-uOL22a+1E6xi9ju2IGXlGzubWpxQ1UQYVtQTSHSmviS9NU6KjwwpQ7CoHLPvg/y5nKrHDVW8DYyMchw6LiMlvg==}
+  /@kmamal/sdl@0.7.3:
+    resolution: {integrity: sha512-kEvLL5H3T3asJhVWYaAZtvD8aDJwUQcfnfcdQzUOwysU82Vv6oxziQa6VE5HWmQlZAF0hfopykQTGlhDVHeesg==}
     requiresBuild: true
     dependencies:
-      tar: 6.1.13
+      tar: 6.1.14
     dev: false
 
   /@mapbox/node-pre-gyp@1.0.10:
@@ -100,7 +100,7 @@ packages:
       npmlog: 5.0.1
       rimraf: 3.0.2
       semver: 7.5.0
-      tar: 6.1.13
+      tar: 6.1.14
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -265,8 +265,8 @@ packages:
     resolution: {integrity: sha512-F0KIgDJfy2nA3zMLmWGKxcH2ZVEtCZXHHdOQs2gSaQ27+lNeEfGxzkIw90aXswATX7AZ33tahPbzy6KAfUreVw==}
     dev: false
 
-  /@types/node@20.1.2:
-    resolution: {integrity: sha512-CTO/wa8x+rZU626cL2BlbCDzydgnFNgc19h4YvizpTO88MFQxab8wqisxaofQJ/9bLGugRdWIuX/TbIs6VVF6g==}
+  /@types/node@20.1.7:
+    resolution: {integrity: sha512-WCuw/o4GSwDGMoonES8rcvwsig77dGCMbZDrZr2x4ZZiNW4P/gcoZXe/0twgtobcTkmg9TuKflxYL/DuwDyJzg==}
     dev: true
 
   /abbrev@1.1.1:
@@ -407,7 +407,7 @@ packages:
       promise-inflight: 1.0.1
       rimraf: 3.0.2
       ssri: 9.0.1
-      tar: 6.1.13
+      tar: 6.1.14
       unique-filename: 2.0.1
     transitivePeerDependencies:
       - bluebird
@@ -1027,6 +1027,12 @@ packages:
   /minipass@4.2.8:
     resolution: {integrity: sha512-fNzuVyifolSLFL4NzpF+wEF4qrgqaaKX0haXPQEdQ7NKAN+WecoKMHV09YcuL/DHxrUsYQOK3MiuDf7Ip2OXfQ==}
     engines: {node: '>=8'}
+    dev: true
+
+  /minipass@5.0.0:
+    resolution: {integrity: sha512-3FnjYuehv9k6ovOEbyOswadCDPX1piCfhV8ncmYtHOjuPwylVWsghTLo7rabjC3Rx5xD4HDx8Wm1xnMF7S5qFQ==}
+    engines: {node: '>=8'}
+    dev: false
 
   /minizlib@2.1.2:
     resolution: {integrity: sha512-bAxsR8BVfj60DWXHE3u30oHzfl4G7khkSuPW+qvpd7jFRHm7dLxOjUk1EHACJ/hxLY8phGJ0YhYHZo7jil7Qdg==}
@@ -1108,7 +1114,7 @@ packages:
       npmlog: 6.0.2
       rimraf: 3.0.2
       semver: 7.5.0
-      tar: 6.1.13
+      tar: 6.1.14
       which: 2.0.2
     transitivePeerDependencies:
       - bluebird
@@ -1507,6 +1513,19 @@ packages:
       minizlib: 2.1.2
       mkdirp: 1.0.4
       yallist: 4.0.0
+    dev: true
+
+  /tar@6.1.14:
+    resolution: {integrity: sha512-piERznXu0U7/pW7cdSn7hjqySIVTYT6F76icmFk7ptU7dDYlXTm5r9A6K04R2vU3olYgoKeo1Cg3eeu5nhftAw==}
+    engines: {node: '>=10'}
+    dependencies:
+      chownr: 2.0.0
+      fs-minipass: 2.1.0
+      minipass: 5.0.0
+      minizlib: 2.1.2
+      mkdirp: 1.0.4
+      yallist: 4.0.0
+    dev: false
 
   /through2@0.6.5:
     resolution: {integrity: sha512-RkK/CCESdTKQZHdmKICijdKKsCRVHs5KsLZ6pACAmF/1GPUQhonHSXWNERctxEp7RmvjdNbZTL5z9V7nSCXKcg==}
