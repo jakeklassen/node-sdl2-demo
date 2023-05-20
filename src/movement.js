@@ -14,6 +14,7 @@ const window = sdl.video.createWindow({
   accelerated: true,
   width: gameWidth * scale,
   height: gameHeight * scale,
+  fullscreen: false,
   vsync: true,
 });
 

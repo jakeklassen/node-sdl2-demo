@@ -7,7 +7,8 @@ const playerTexture = await loadImage("assets/player-ship.png");
 
 const window = sdl.video.createWindow({
   title: "SDL2 FPS Counter",
-  vsync: true,
+  accelerated: true,
+  vsync: false,
 });
 
 const { width, height } = window;
