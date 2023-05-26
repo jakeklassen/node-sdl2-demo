@@ -2,8 +2,8 @@ import sdl from "@kmamal/sdl";
 import createContext from "@kmamal/gl";
 
 const window = sdl.video.createWindow({
-  title: "WebGL!",
-  opengl: true,
+	title: "WebGL!",
+	opengl: true,
 });
 
 // Clear screen to red

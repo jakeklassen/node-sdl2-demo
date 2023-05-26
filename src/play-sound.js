@@ -3,7 +3,7 @@ import fs from "node:fs";
 import { setTimeout } from "node:timers/promises";
 
 const titleScreenMusicBuffer = fs.createReadStream(
-  "assets/audio/title-screen-music.wav",
+	"assets/audio/title-screen-music.wav",
 );
 
 const audioContext = new AudioContext();
@@ -11,7 +11,7 @@ const gainNode = new GainNode(audioContext);
 gainNode.connect(audioContext.destination);
 
 const titleScreenMusicTrackBuffer = await audioContext.decodeAudioData(
-  titleScreenMusicBuffer,
+	titleScreenMusicBuffer,
 );
 const source = audioContext.createBufferSource();
 source.buffer = titleScreenMusicTrackBuffer;

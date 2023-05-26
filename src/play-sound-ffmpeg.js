@@ -11,11 +11,11 @@ console.log(sdl.audio.devices);
 
 const dir = path.dirname(import.meta.url);
 const buffer = await loadAudio(
-  path.join(dir, "assets/audio/title-screen-music.wav"),
-  {
-    channels,
-    frequency,
-  },
+	path.join(dir, "assets/audio/title-screen-music.wav"),
+	{
+		channels,
+		frequency,
+	},
 );
 
 console.log(buffer);
