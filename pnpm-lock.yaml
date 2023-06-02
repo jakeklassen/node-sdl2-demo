@@ -28,13 +28,13 @@ dependencies:
     version: 0.8.0
   objecs:
     specifier: ^0.0.3
-    version: 0.0.3(typescript@5.0.4)
+    version: 0.0.3(typescript@5.1.3)
   sharp:
     specifier: ^0.32.1
     version: 0.32.1
   type-fest:
-    specifier: ^3.11.0
-    version: 3.11.0
+    specifier: ^3.11.1
+    version: 3.11.1
 
 devDependencies:
   '@kmamal/packager':
@@ -1583,11 +1583,11 @@ packages:
       set-blocking: 2.0.0
     dev: false
 
-  /objecs@0.0.3(typescript@5.0.4):
+  /objecs@0.0.3(typescript@5.1.3):
     resolution: {integrity: sha512-4DR8vCcgRxtTN95l/I9uL1gJQRIYIDJUGDEFgCJcGdywFROtZoqByag/ak86y8N5TD82vU2vY6w3CsEXTqxW+g==}
     dependencies:
-      tsup: 6.7.0(typescript@5.0.4)
-      type-fest: 3.10.0(typescript@5.0.4)
+      tsup: 6.7.0(typescript@5.1.3)
+      type-fest: 3.10.0(typescript@5.1.3)
     transitivePeerDependencies:
       - '@swc/core'
       - postcss
@@ -2063,7 +2063,7 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: false
 
-  /tsup@6.7.0(typescript@5.0.4):
+  /tsup@6.7.0(typescript@5.1.3):
     resolution: {integrity: sha512-L3o8hGkaHnu5TdJns+mCqFsDBo83bJ44rlK7e6VdanIvpea4ArPcU3swWGsLVbXak1PqQx/V+SSmFPujBK+zEQ==}
     engines: {node: '>=14.18'}
     hasBin: true
@@ -2093,7 +2093,7 @@ packages:
       source-map: 0.8.0-beta.0
       sucrase: 3.32.0
       tree-kill: 1.2.2
-      typescript: 5.0.4
+      typescript: 5.1.3
     transitivePeerDependencies:
       - supports-color
       - ts-node
@@ -2105,17 +2105,17 @@ packages:
       safe-buffer: 5.2.1
     dev: false
 
-  /type-fest@3.10.0(typescript@5.0.4):
+  /type-fest@3.10.0(typescript@5.1.3):
     resolution: {integrity: sha512-hmAPf1datm+gt3c2mvu0sJyhFy6lTkIGf0GzyaZWxRLnabQfPUqg6tF95RPg6sLxKI7nFLGdFxBcf2/7+GXI+A==}
     engines: {node: '>=14.16'}
     peerDependencies:
       typescript: '>=4.7.0'
     dependencies:
-      typescript: 5.0.4
+      typescript: 5.1.3
     dev: false
 
-  /type-fest@3.11.0:
-    resolution: {integrity: sha512-JaPw5U9ixP0XcpUbQoVSbxSDcK/K4nww20C3kjm9yE6cDRRhptU28AH60VWf9ltXmCrIfIbtt9J+2OUk2Uqiaw==}
+  /type-fest@3.11.1:
+    resolution: {integrity: sha512-aCuRNRERRVh33lgQaJRlUxZqzfhzwTrsE98Mc3o3VXqmiaQdHacgUtJ0esp+7MvZ92qhtzKPeusaX6vIEcoreA==}
     engines: {node: '>=14.16'}
     dev: false
 
@@ -2123,9 +2123,9 @@ packages:
     resolution: {integrity: sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==}
     dev: false
 
-  /typescript@5.0.4:
-    resolution: {integrity: sha512-cW9T5W9xY37cc+jfEnaUvX91foxtHkza3Nw3wkoF4sSlKn0MONdkdEndig/qPBWXNkmplh3NzayQzCiHM4/hqw==}
-    engines: {node: '>=12.20'}
+  /typescript@5.1.3:
+    resolution: {integrity: sha512-XH627E9vkeqhlZFQuL+UsyAXEnibT0kWR2FWONlr4sTjvxyJYnyefgrkyECLzM5NenmKzRAy2rR/OlYLA1HkZw==}
+    engines: {node: '>=14.17'}
     hasBin: true
     dev: false
 
