@@ -1,4 +1,4 @@
-lockfileVersion: '6.1'
+lockfileVersion: '6.0'
 
 settings:
   autoInstallPeers: true
@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@kmamal/gl':
-    specifier: 6.0.1-1
-    version: 6.0.1-1
+    specifier: 6.0.2-1
+    version: 6.0.2-1
   '@kmamal/sdl':
     specifier: ^0.7.4
     version: 0.7.4
@@ -24,8 +24,8 @@ dependencies:
     specifier: ^5.1.0
     version: 5.1.0
   node-web-audio-api:
-    specifier: ^0.8.0
-    version: 0.8.0
+    specifier: ^0.9.0
+    version: 0.9.0
   objecs:
     specifier: ^0.0.3
     version: 0.0.3(typescript@5.1.3)
@@ -33,16 +33,16 @@ dependencies:
     specifier: ^0.32.1
     version: 0.32.1
   type-fest:
-    specifier: ^3.11.1
-    version: 3.11.1
+    specifier: ^3.12.0
+    version: 3.12.0
 
 devDependencies:
   '@kmamal/packager':
     specifier: ^0.1.3
     version: 0.1.3
   '@types/node':
-    specifier: ^20.2.5
-    version: 20.2.5
+    specifier: ^20.3.1
+    version: 20.3.1
 
 packages:
 
@@ -296,8 +296,8 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: false
 
-  /@kmamal/gl@6.0.1-1:
-    resolution: {integrity: sha512-tKc3fLIztTEPSg5Lf6sfZc98j3HeTEp42/e4x9TuVlEomRLdQ2avKqoBGuVI0lV8fm+IHf6kNWIPe2xeauYbLw==}
+  /@kmamal/gl@6.0.2-1:
+    resolution: {integrity: sha512-VVTdBXfiim33ppgPh+co5zDU+s1bMV+QHyMMMxk3uoejmmclREGuX95VXkalurKf5yZwT0rrGUP1aUU+8bEDcw==}
     engines: {node: '>=14.0.0'}
     requiresBuild: true
     dependencies:
@@ -305,9 +305,9 @@ packages:
       bit-twiddle: 1.0.2
       glsl-tokenizer: 2.1.5
       nan: 2.17.0
-      node-abi: 3.40.0
+      node-abi: 3.45.0
       node-gyp: 9.3.1
-      prebuild-install: 7.1.1
+      tar: 6.1.15
     transitivePeerDependencies:
       - bluebird
       - supports-color
@@ -444,8 +444,8 @@ packages:
       '@napi-rs/canvas-win32-x64-msvc': 0.1.41
     dev: false
 
-  /@napi-rs/cli@2.15.2:
-    resolution: {integrity: sha512-80tBCtCnEhAmFtB9oPM0FL74uW7fAmtpeqjvERH7Q1z/aZzCAs/iNfE7U3ehpwg9Q07Ob2Eh/+1guyCdX/p24w==}
+  /@napi-rs/cli@2.16.1:
+    resolution: {integrity: sha512-L0Gr5iEQIDEbvWdDr1HUaBOxBSHL1VZhWSk1oryawoT8qJIY+KGfLFelU+Qma64ivCPbxYpkfPoKYVG3rcoGIA==}
     engines: {node: '>= 10'}
     hasBin: true
     dev: false
@@ -504,8 +504,8 @@ packages:
     resolution: {integrity: sha512-F0KIgDJfy2nA3zMLmWGKxcH2ZVEtCZXHHdOQs2gSaQ27+lNeEfGxzkIw90aXswATX7AZ33tahPbzy6KAfUreVw==}
     dev: false
 
-  /@types/node@20.2.5:
-    resolution: {integrity: sha512-JJulVEQXmiY9Px5axXHeYGLSjhkZEnD+MDPDGbCbIAbMslkKwmygtZFy1X6s/075Yo94sf8GuSlFfPzysQrWZQ==}
+  /@types/node@20.3.1:
+    resolution: {integrity: sha512-EhcH/wvidPy1WeML3TtYFGR83UzjxeWRen9V402T8aUGYsCHOmfoisV3ZSg03gAFIbLq8TnWOJ0f4cALtnSEUg==}
     dev: true
 
   /abbrev@1.1.1:
@@ -1485,6 +1485,13 @@ packages:
       semver: 7.5.1
     dev: false
 
+  /node-abi@3.45.0:
+    resolution: {integrity: sha512-iwXuFrMAcFVi/ZoZiqq8BzAdsLw9kxDfTC0HMyjXfSL/6CSDAGD5UmR7azrAgWV1zKYq7dUUMj4owusBWKLsiQ==}
+    engines: {node: '>=10'}
+    dependencies:
+      semver: 7.5.1
+    dev: false
+
   /node-addon-api@6.1.0:
     resolution: {integrity: sha512-+eawOlIgy680F0kBzPUNFhMZGtJ1YmqM6l4+Crf4IkImjYrO/mqPwRMh352g23uIaQKFItcQ64I7KMaJxHgAVA==}
     dev: false
@@ -1521,11 +1528,11 @@ packages:
       - supports-color
     dev: false
 
-  /node-web-audio-api@0.8.0:
-    resolution: {integrity: sha512-2PIdhble2gFxS/K65IqEKkxYx50h1dNsca+h8DntRxhI+4qI6FemhIEuljhcTj6srvvSTTj7X0IGfY9ShXIedw==}
+  /node-web-audio-api@0.9.0:
+    resolution: {integrity: sha512-gH7xSsrucW195mzR52ng9vuouzTS/0/jdQ61JVfOFi9w53V5UVnYyAZ0D2EY/rxtIu5BFZRgeG6IULuhn+R4LQ==}
     engines: {node: '>= 14'}
     dependencies:
-      '@napi-rs/cli': 2.15.2
+      '@napi-rs/cli': 2.16.1
       '@node-rs/helper': 1.3.3
     dev: false
 
@@ -2114,8 +2121,8 @@ packages:
       typescript: 5.1.3
     dev: false
 
-  /type-fest@3.11.1:
-    resolution: {integrity: sha512-aCuRNRERRVh33lgQaJRlUxZqzfhzwTrsE98Mc3o3VXqmiaQdHacgUtJ0esp+7MvZ92qhtzKPeusaX6vIEcoreA==}
+  /type-fest@3.12.0:
+    resolution: {integrity: sha512-qj9wWsnFvVEMUDbESiilKeXeHL7FwwiFcogfhfyjmvT968RXSvnl23f1JOClTHYItsi7o501C/7qVllscUP3oA==}
     engines: {node: '>=14.16'}
     dev: false
 
