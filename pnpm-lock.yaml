@@ -9,8 +9,8 @@ dependencies:
     specifier: 6.0.2-1
     version: 6.0.2-1
   '@kmamal/sdl':
-    specifier: ^0.7.4
-    version: 0.7.4
+    specifier: ^0.7.5
+    version: 0.7.5
   '@napi-rs/canvas':
     specifier: ^0.1.41
     version: 0.1.41
@@ -24,8 +24,8 @@ dependencies:
     specifier: ^5.1.0
     version: 5.1.0
   node-web-audio-api:
-    specifier: ^0.9.0
-    version: 0.9.0
+    specifier: ^0.10.0
+    version: 0.10.0
   objecs:
     specifier: ^0.0.8
     version: 0.0.8
@@ -41,8 +41,8 @@ devDependencies:
     specifier: ^0.1.3
     version: 0.1.3
   '@types/node':
-    specifier: ^20.3.1
-    version: 20.3.1
+    specifier: ^20.3.2
+    version: 20.3.2
 
 packages:
 
@@ -323,8 +323,8 @@ packages:
       tar: 6.1.15
     dev: true
 
-  /@kmamal/sdl@0.7.4:
-    resolution: {integrity: sha512-rX/U6KxbtE/NTM+YGCeEri59kdZAaI/WXoJRQ+JR93VOKe5gSvgGG9dxZWaClugDE57k56OMNMLGVz3Uhlt2Lg==}
+  /@kmamal/sdl@0.7.5:
+    resolution: {integrity: sha512-AqScMpwX88lcbEeXEenlqu4QHMuY9MRJqE6fqfs6PRy91p5FGqZnY9R/RBdFcfHF8BlExXm2vV5Ll4OPY3MmTw==}
     requiresBuild: true
     dependencies:
       tar: 6.1.15
@@ -504,8 +504,8 @@ packages:
     resolution: {integrity: sha512-F0KIgDJfy2nA3zMLmWGKxcH2ZVEtCZXHHdOQs2gSaQ27+lNeEfGxzkIw90aXswATX7AZ33tahPbzy6KAfUreVw==}
     dev: false
 
-  /@types/node@20.3.1:
-    resolution: {integrity: sha512-EhcH/wvidPy1WeML3TtYFGR83UzjxeWRen9V402T8aUGYsCHOmfoisV3ZSg03gAFIbLq8TnWOJ0f4cALtnSEUg==}
+  /@types/node@20.3.2:
+    resolution: {integrity: sha512-vOBLVQeCQfIcF/2Y7eKFTqrMnizK5lRNQ7ykML/5RuwVXVWxYkgwS7xbt4B6fKCUPgbSL5FSsjHQpaGQP/dQmw==}
     dev: true
 
   /abbrev@1.1.1:
@@ -1528,8 +1528,8 @@ packages:
       - supports-color
     dev: false
 
-  /node-web-audio-api@0.9.0:
-    resolution: {integrity: sha512-gH7xSsrucW195mzR52ng9vuouzTS/0/jdQ61JVfOFi9w53V5UVnYyAZ0D2EY/rxtIu5BFZRgeG6IULuhn+R4LQ==}
+  /node-web-audio-api@0.10.0:
+    resolution: {integrity: sha512-df8BQsY7QMvShcWlcP1VpK790gvlBzOr9iBOr9oNdqoXil7ATs+fM07b3+PDk/r2I5oavdiBYzif52VVtan/+w==}
     engines: {node: '>= 14'}
     dependencies:
       '@napi-rs/cli': 2.16.1
