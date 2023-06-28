@@ -27,8 +27,8 @@ dependencies:
     specifier: ^0.10.0
     version: 0.10.0
   objecs:
-    specifier: ^0.0.8
-    version: 0.0.8
+    specifier: ^0.0.10
+    version: 0.0.10
   sharp:
     specifier: ^0.32.1
     version: 0.32.1
@@ -1590,10 +1590,10 @@ packages:
       set-blocking: 2.0.0
     dev: false
 
-  /objecs@0.0.8:
-    resolution: {integrity: sha512-Y2j4CnrvWF3svyBGcsTL7s25ho0C3vM+CPXHMiKlPj1gYSICh03TkpVmdh07zp/hv8WTT74sAY5BOXHvCTOHrg==}
+  /objecs@0.0.10:
+    resolution: {integrity: sha512-k7STGgSjKNo1RJKeG9aQBNM5amift3IwKIdTlC7baUplSY8BAgnL5SK9bemT4m1kXBSPagKYXe2ejN1S3fTeIQ==}
     dependencies:
-      tsup: 7.0.0
+      tsup: 7.1.0
       type-fest: 3.12.0
     transitivePeerDependencies:
       - '@swc/core'
@@ -2070,8 +2070,8 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: false
 
-  /tsup@7.0.0:
-    resolution: {integrity: sha512-yYARDRkPq07mO3YUXTvF12ISwWQG57Odve8aFEgLdHyeGungxuKxb19yf9G0W8y59SZFkLnRj1gkoVk1gd5fbQ==}
+  /tsup@7.1.0:
+    resolution: {integrity: sha512-mazl/GRAk70j8S43/AbSYXGgvRP54oQeX8Un4iZxzATHt0roW0t6HYDVZIXMw0ZQIpvr1nFMniIVnN5186lW7w==}
     engines: {node: '>=16.14'}
     hasBin: true
     peerDependencies:
