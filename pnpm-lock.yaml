@@ -9,8 +9,8 @@ dependencies:
     specifier: 6.0.2-1
     version: 6.0.2-1
   '@kmamal/sdl':
-    specifier: ^0.7.5
-    version: 0.7.5
+    specifier: ^0.7.7
+    version: 0.7.7
   '@napi-rs/canvas':
     specifier: ^0.1.41
     version: 0.1.41
@@ -41,8 +41,8 @@ devDependencies:
     specifier: ^0.1.3
     version: 0.1.3
   '@types/node':
-    specifier: ^20.3.2
-    version: 20.3.2
+    specifier: ^20.4.0
+    version: 20.4.0
 
 packages:
 
@@ -323,8 +323,8 @@ packages:
       tar: 6.1.15
     dev: true
 
-  /@kmamal/sdl@0.7.5:
-    resolution: {integrity: sha512-AqScMpwX88lcbEeXEenlqu4QHMuY9MRJqE6fqfs6PRy91p5FGqZnY9R/RBdFcfHF8BlExXm2vV5Ll4OPY3MmTw==}
+  /@kmamal/sdl@0.7.7:
+    resolution: {integrity: sha512-wKKVh517SvvXxLV34R+np8rDfHP52b8chwnyNxP/v4qegO+udTvibIYx2naPXMK1dNZYGyOoBa/LA1nafCAaIw==}
     requiresBuild: true
     dependencies:
       tar: 6.1.15
@@ -504,8 +504,8 @@ packages:
     resolution: {integrity: sha512-F0KIgDJfy2nA3zMLmWGKxcH2ZVEtCZXHHdOQs2gSaQ27+lNeEfGxzkIw90aXswATX7AZ33tahPbzy6KAfUreVw==}
     dev: false
 
-  /@types/node@20.3.2:
-    resolution: {integrity: sha512-vOBLVQeCQfIcF/2Y7eKFTqrMnizK5lRNQ7ykML/5RuwVXVWxYkgwS7xbt4B6fKCUPgbSL5FSsjHQpaGQP/dQmw==}
+  /@types/node@20.4.0:
+    resolution: {integrity: sha512-jfT7iTf/4kOQ9S7CHV9BIyRaQqHu67mOjsIQBC3BKZvzvUB6zLxEwJ6sBE3ozcvP8kF6Uk5PXN0Q+c0dfhGX0g==}
     dev: true
 
   /abbrev@1.1.1:
