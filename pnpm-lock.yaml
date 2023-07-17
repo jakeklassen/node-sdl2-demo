@@ -27,8 +27,8 @@ dependencies:
     specifier: ^0.10.0
     version: 0.10.0
   objecs:
-    specifier: ^0.0.10
-    version: 0.0.10
+    specifier: ^0.0.14
+    version: 0.0.14
   sharp:
     specifier: ^0.32.2
     version: 0.32.2
@@ -1591,11 +1591,11 @@ packages:
       set-blocking: 2.0.0
     dev: false
 
-  /objecs@0.0.10:
-    resolution: {integrity: sha512-k7STGgSjKNo1RJKeG9aQBNM5amift3IwKIdTlC7baUplSY8BAgnL5SK9bemT4m1kXBSPagKYXe2ejN1S3fTeIQ==}
+  /objecs@0.0.14:
+    resolution: {integrity: sha512-gma4GdjeXyavqAbNsr+l2wPHf2Di3tuDb1HyqZ88HLRMZ41JwXgyQ9EPSkPTU7vUfmwqaeK7/nS0YpZAtvE93w==}
     dependencies:
       tsup: 7.1.0
-      type-fest: 3.12.0
+      type-fest: 4.0.0
     transitivePeerDependencies:
       - '@swc/core'
       - postcss
@@ -2145,11 +2145,6 @@ packages:
     resolution: {integrity: sha512-McnNiV1l8RYeY8tBgEpuodCC1mLUdbSN+CYBL7kJsJNInOP8UjDDEwdk6Mw60vdLLrr5NHKZhMAOSrR2NZuQ+w==}
     dependencies:
       safe-buffer: 5.2.1
-    dev: false
-
-  /type-fest@3.12.0:
-    resolution: {integrity: sha512-qj9wWsnFvVEMUDbESiilKeXeHL7FwwiFcogfhfyjmvT968RXSvnl23f1JOClTHYItsi7o501C/7qVllscUP3oA==}
-    engines: {node: '>=14.16'}
     dev: false
 
   /type-fest@4.0.0:
