@@ -24,8 +24,8 @@ dependencies:
     specifier: ^5.1.0
     version: 5.1.0
   node-web-audio-api:
-    specifier: ^0.10.0
-    version: 0.10.0
+    specifier: ^0.11.0
+    version: 0.11.0
   objecs:
     specifier: ^0.0.14
     version: 0.0.14
@@ -1529,8 +1529,8 @@ packages:
       - supports-color
     dev: false
 
-  /node-web-audio-api@0.10.0:
-    resolution: {integrity: sha512-df8BQsY7QMvShcWlcP1VpK790gvlBzOr9iBOr9oNdqoXil7ATs+fM07b3+PDk/r2I5oavdiBYzif52VVtan/+w==}
+  /node-web-audio-api@0.11.0:
+    resolution: {integrity: sha512-Cm7hEQtaLbUR0/WYbVpTORvIflA8wJj5//9E9cKzwUNYkTp1b29ig6KZafjhUXiZFrKX41/8DBK5n/J6Tfni1Q==}
     engines: {node: '>= 14'}
     dependencies:
       '@napi-rs/cli': 2.16.1
