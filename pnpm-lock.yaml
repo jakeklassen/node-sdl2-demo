@@ -12,17 +12,17 @@ dependencies:
     specifier: ^0.7.8
     version: 0.7.8
   '@napi-rs/canvas':
-    specifier: ^0.1.43
-    version: 0.1.43
+    specifier: ^0.1.44
+    version: 0.1.44
   canvas:
     specifier: ^2.11.2
     version: 2.11.2
   execa:
-    specifier: ^8.0.0
-    version: 8.0.0
+    specifier: ^8.0.1
+    version: 8.0.1
   ffmpeg-static:
-    specifier: ^5.1.0
-    version: 5.1.0
+    specifier: ^5.2.0
+    version: 5.2.0
   node-web-audio-api:
     specifier: ^0.11.0
     version: 0.11.0
@@ -30,19 +30,19 @@ dependencies:
     specifier: ^0.0.16
     version: 0.0.16
   sharp:
-    specifier: ^0.32.4
-    version: 0.32.4
+    specifier: ^0.32.5
+    version: 0.32.5
   type-fest:
-    specifier: ^4.2.0
-    version: 4.2.0
+    specifier: ^4.3.1
+    version: 4.3.1
 
 devDependencies:
   '@kmamal/packager':
     specifier: ^0.1.3
     version: 0.1.3
   '@types/node':
-    specifier: ^20.5.0
-    version: 20.5.0
+    specifier: ^20.5.7
+    version: 20.5.7
 
 packages:
 
@@ -116,8 +116,8 @@ packages:
       - supports-color
     dev: false
 
-  /@napi-rs/canvas-android-arm64@0.1.43:
-    resolution: {integrity: sha512-5ZWSWvmarPjeftm7i3xFUllS/UMgHxUuMJpE89kK0E7rcSxUq2Sup8qxyKMqbQ6f06KvjSCxrHCZ3tqiC0eKew==}
+  /@napi-rs/canvas-android-arm64@0.1.44:
+    resolution: {integrity: sha512-3UDlVf1CnibdUcM0+0xPH4L4/d/tCI895or0y7mr/Xlaa1tDmvcQCvBYl9G54IpXsm+e4T1XkVrGGJD4k1NfSg==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [android]
@@ -125,8 +125,8 @@ packages:
     dev: false
     optional: true
 
-  /@napi-rs/canvas-darwin-arm64@0.1.43:
-    resolution: {integrity: sha512-t3y0n4l5vv9NR7Um3QoMKOvxwu/3YNNwjwa6gpanHvrK2yn4rsd05KgJAb7p13rkbFZzqEl91y2i9PBHSjDKqg==}
+  /@napi-rs/canvas-darwin-arm64@0.1.44:
+    resolution: {integrity: sha512-Y1Yx0H45Iicx2b6pcrlICjlwgylLtqi0t5OJgeUXnxLcJ1+aEpmjLr16tddqHkmGUw/nBRAwfPJrf3GaOwWowQ==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
@@ -134,8 +134,8 @@ packages:
     dev: false
     optional: true
 
-  /@napi-rs/canvas-darwin-x64@0.1.43:
-    resolution: {integrity: sha512-AlCPjdkuTCLoIqrOvj80pDQtUu8V9v8rQ5tv7jyipplU5Ofc5rff7vSlMv3EZd35++RDIEDaUTIJbMC9utaiBg==}
+  /@napi-rs/canvas-darwin-x64@0.1.44:
+    resolution: {integrity: sha512-gbzeNz13DFH0Ak5ENyQ5ZEuSuCjNDxA/OV9P5f19lywbOVL5Ol+qgKX0BXBcP3O3IXWahruOvmmLUBn9h1MHpA==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
@@ -143,8 +143,8 @@ packages:
     dev: false
     optional: true
 
-  /@napi-rs/canvas-linux-arm-gnueabihf@0.1.43:
-    resolution: {integrity: sha512-apylXQgAdLqYJYXwe6F0Uz0jN30HQ/pF2UXN0mlpPwLZH4b++7WziCh/uHXSPx7i68GrmLFit0VqHUVPxs/EAg==}
+  /@napi-rs/canvas-linux-arm-gnueabihf@0.1.44:
+    resolution: {integrity: sha512-Sad3/eGyzTZiyJFeFrmX1M3aRp0n3qTAXeCm6EeAjCFGk8TWd4cINCGT3IRY4wmCvNnpe6C4fM03K07cU5YYwA==}
     engines: {node: '>= 10'}
     cpu: [arm]
     os: [linux]
@@ -152,8 +152,8 @@ packages:
     dev: false
     optional: true
 
-  /@napi-rs/canvas-linux-arm64-gnu@0.1.43:
-    resolution: {integrity: sha512-PkNbVEliHsoDIY/K1eQNMDyMPB4hb8NfJgBlXX+nTlr5o0m2tdUDBKi7Q/EXHB2D/alAUzK1esSxNH7Y7/H3/g==}
+  /@napi-rs/canvas-linux-arm64-gnu@0.1.44:
+    resolution: {integrity: sha512-bCrI9naYGPRFHePMGN+wlrWzC+Swi6uc1YzFg4/wOYzHKSte8FXHrGspHOPPr12BCEmgg3yXK8nnLjxGdlAWtg==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
@@ -161,8 +161,8 @@ packages:
     dev: false
     optional: true
 
-  /@napi-rs/canvas-linux-arm64-musl@0.1.43:
-    resolution: {integrity: sha512-hNq61YKCDvbQbCDwNYIh4vySiJ0qD9ZzvKi/hOFFrG0NW4nFfi1JaJISp1EzHpUiFkPIDfqWSOMu0dWJYWNApA==}
+  /@napi-rs/canvas-linux-arm64-musl@0.1.44:
+    resolution: {integrity: sha512-gB/ao9zBQaOJik4arOKJisZaG+v7DuyBW7UdG+0L80msAuJTTH2UgWOnmXfZwPxzxNbFKzOa8r48uVzfTaAHGQ==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
@@ -170,8 +170,8 @@ packages:
     dev: false
     optional: true
 
-  /@napi-rs/canvas-linux-x64-gnu@0.1.43:
-    resolution: {integrity: sha512-tzUzx75cHIKZZY3zauD+grMxuCaMVPkShfWAt3hqCpN3axNWnzo5ZdpmEBmHrZfLu4SdPvFYIQQSC09DhIf6/A==}
+  /@napi-rs/canvas-linux-x64-gnu@0.1.44:
+    resolution: {integrity: sha512-pvHy1bJ0DDD4Bsx6yuFnqpIyBW7+2iIK5BpvmL36zXE+7w2MEeaYzLUWTBhrXj8rzHys6MwLmHNlkw65R80YbQ==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
@@ -179,8 +179,8 @@ packages:
     dev: false
     optional: true
 
-  /@napi-rs/canvas-linux-x64-musl@0.1.43:
-    resolution: {integrity: sha512-kmzMM8dgXCq52mGjsjmwwvoOe3pHfPu3sbbPP2MzuddauUm0k6TkCvgTUmCeetnV8kLZbyrnfMYuArFtKM2chw==}
+  /@napi-rs/canvas-linux-x64-musl@0.1.44:
+    resolution: {integrity: sha512-5QaeYqNZ/u1QI2E/UqvnmuORT6cI1qTtLosPp/y4awaK+/LXQEzotHNv0nan0z4EV/0mXsJswY9JpISRJzx+Kw==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
@@ -188,8 +188,8 @@ packages:
     dev: false
     optional: true
 
-  /@napi-rs/canvas-win32-x64-msvc@0.1.43:
-    resolution: {integrity: sha512-UjOErvinzZc3oBaF6cDePmIkX5JG0SaczDRUOCkFgVGe0EIQBsJtxaBImR/cwli9GjA5wSmjiR0HxnMoge3/zg==}
+  /@napi-rs/canvas-win32-x64-msvc@0.1.44:
+    resolution: {integrity: sha512-pbeTGLox+I+sMVl/FFO21Xvp0PhijsuEr9gaynmN2X7FPTg+CCuuBDhfSU5iMAtcCCYFCk8ridZIWy5jkcf72w==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
@@ -197,19 +197,19 @@ packages:
     dev: false
     optional: true
 
-  /@napi-rs/canvas@0.1.43:
-    resolution: {integrity: sha512-+lIzB2Safp8pBBpWST6HwB6eezAOFfuajpEK601ce4zUB6CjDw62Sr7d44mjJvKqe6Ig0S6YBh5iOedNmUzXHQ==}
+  /@napi-rs/canvas@0.1.44:
+    resolution: {integrity: sha512-IyhSndjw29LR1WqkUZvTJI4j8Ve1QGbZYtpdQjJjcFvsvJS4/WHzOWV8ZciLPJBhrYvSQf/JbZJy5LHmFV+plg==}
     engines: {node: '>= 10'}
     optionalDependencies:
-      '@napi-rs/canvas-android-arm64': 0.1.43
-      '@napi-rs/canvas-darwin-arm64': 0.1.43
-      '@napi-rs/canvas-darwin-x64': 0.1.43
-      '@napi-rs/canvas-linux-arm-gnueabihf': 0.1.43
-      '@napi-rs/canvas-linux-arm64-gnu': 0.1.43
-      '@napi-rs/canvas-linux-arm64-musl': 0.1.43
-      '@napi-rs/canvas-linux-x64-gnu': 0.1.43
-      '@napi-rs/canvas-linux-x64-musl': 0.1.43
-      '@napi-rs/canvas-win32-x64-msvc': 0.1.43
+      '@napi-rs/canvas-android-arm64': 0.1.44
+      '@napi-rs/canvas-darwin-arm64': 0.1.44
+      '@napi-rs/canvas-darwin-x64': 0.1.44
+      '@napi-rs/canvas-linux-arm-gnueabihf': 0.1.44
+      '@napi-rs/canvas-linux-arm64-gnu': 0.1.44
+      '@napi-rs/canvas-linux-arm64-musl': 0.1.44
+      '@napi-rs/canvas-linux-x64-gnu': 0.1.44
+      '@napi-rs/canvas-linux-x64-musl': 0.1.44
+      '@napi-rs/canvas-win32-x64-msvc': 0.1.44
     dev: false
 
   /@napi-rs/cli@2.16.1:
@@ -275,8 +275,8 @@ packages:
     resolution: {integrity: sha512-F0KIgDJfy2nA3zMLmWGKxcH2ZVEtCZXHHdOQs2gSaQ27+lNeEfGxzkIw90aXswATX7AZ33tahPbzy6KAfUreVw==}
     dev: false
 
-  /@types/node@20.5.0:
-    resolution: {integrity: sha512-Mgq7eCtoTjT89FqNoTzzXg2XvCi5VMhRV6+I2aYanc6kQCBImeNaAYRs/DyoVqk1YEUJK5gN9VO7HRIdz4Wo3Q==}
+  /@types/node@20.5.7:
+    resolution: {integrity: sha512-dP7f3LdZIysZnmvP3ANJYTSwg+wLLl8p7RqniVlV7j+oXSXAbt9h0WIBFmJy5inWZoX9wZN6eXx+YXd9Rh3RBA==}
     dev: true
 
   /abbrev@1.1.1:
@@ -603,8 +603,8 @@ packages:
     resolution: {integrity: sha512-2bmlRpNKBxT/CRmPOlyISQpNj+qSeYvcym/uT0Jx2bMOlKLtSy1ZmLuVxSEKKyor/N5yhvp/ZiG1oE3DEYMSFA==}
     dev: false
 
-  /execa@8.0.0:
-    resolution: {integrity: sha512-CTNS0BcKBcoOsawKBlpcKNmK4Kjuyz5jVLhf+PUsHGMqiKMVTa4cN3U7r7bRY8KTpfOGpXMo27fdy0dYVg2pqA==}
+  /execa@8.0.1:
+    resolution: {integrity: sha512-VyhnebXciFV2DESc+p6B+y0LjSm0krU4OgJN44qFAhBY0TJ+1V61tYD2+wHusZ6F9n5K+vl8k0sTy7PEfV4qpg==}
     engines: {node: '>=16.17'}
     dependencies:
       cross-spawn: 7.0.3
@@ -623,8 +623,8 @@ packages:
     engines: {node: '>=6'}
     dev: false
 
-  /fast-fifo@1.3.0:
-    resolution: {integrity: sha512-IgfweLvEpwyA4WgiQe9Nx6VV2QkML2NkvZnk1oKnIzXgXdWxuhF7zw4DvLTPZJn6PIUneiAXPF24QmoEqHTjyw==}
+  /fast-fifo@1.3.2:
+    resolution: {integrity: sha512-/d9sfos4yxzpwkDkuN7k2SqFKtYNmCTzgfEpz82x34IM9/zc8KGxQoXg1liNC/izpRM/MBdt44Nmx41ZWqk+FQ==}
     dev: false
 
   /fast-glob@3.2.12:
@@ -644,8 +644,8 @@ packages:
       reusify: 1.0.4
     dev: true
 
-  /ffmpeg-static@5.1.0:
-    resolution: {integrity: sha512-eEWOiGdbf7HKPeJI5PoJ0oCwkL0hckL2JdS4JOuB/gUETppwkEpq8nF0+e6VEQnDCo/iuoipbTUsn9QJmtpNkg==}
+  /ffmpeg-static@5.2.0:
+    resolution: {integrity: sha512-WrM7kLW+do9HLr+H6tk7LzQ7kPqbAgLjdzNE32+u3Ff11gXt9Kkkd2nusGFrlWMIe+XaA97t+I8JS7sZIrvRgA==}
     engines: {node: '>=16'}
     requiresBuild: true
     dependencies:
@@ -1096,6 +1096,13 @@ packages:
       semver: 7.5.1
     dev: false
 
+  /node-abi@3.47.0:
+    resolution: {integrity: sha512-2s6B2CWZM//kPgwnuI0KrYwNjfdByE25zvAaEpq9IH4zcNsarH8Ihu/UuX6XMPEogDAxkuUFeZn60pXNHAqn3A==}
+    engines: {node: '>=10'}
+    dependencies:
+      semver: 7.5.4
+    dev: false
+
   /node-addon-api@6.1.0:
     resolution: {integrity: sha512-+eawOlIgy680F0kBzPUNFhMZGtJ1YmqM6l4+Crf4IkImjYrO/mqPwRMh352g23uIaQKFItcQ64I7KMaJxHgAVA==}
     dev: false
@@ -1253,7 +1260,7 @@ packages:
       minimist: 1.2.8
       mkdirp-classic: 0.5.3
       napi-build-utils: 1.0.2
-      node-abi: 3.45.0
+      node-abi: 3.47.0
       pump: 3.0.0
       rc: 1.2.8
       simple-get: 4.0.1
@@ -1384,8 +1391,8 @@ packages:
     resolution: {integrity: sha512-KiKBS8AnWGEyLzofFfmvKwpdPzqiy16LvQfK3yv/fVH7Bj13/wl3JSR1J+rfgRE9q7xUJK4qvgS8raSOeLUehw==}
     dev: false
 
-  /sharp@0.32.4:
-    resolution: {integrity: sha512-exUnZewqVZC6UXqXuQ8fyJJv0M968feBi04jb9GcUHrWtkRoAKnbJt8IfwT4NJs7FskArbJ14JAFGVuooszoGg==}
+  /sharp@0.32.5:
+    resolution: {integrity: sha512-0dap3iysgDkNaPOaOL4X/0akdu0ma62GcdC2NBQ+93eqpePdDdr2/LM0sFdDSMmN7yS+odyZtPsb7tx/cYBKnQ==}
     engines: {node: '>=14.15.0'}
     requiresBuild: true
     dependencies:
@@ -1482,10 +1489,10 @@ packages:
       minipass: 3.3.6
     dev: false
 
-  /streamx@2.15.0:
-    resolution: {integrity: sha512-HcxY6ncGjjklGs1xsP1aR71INYcsXFJet5CU1CHqihQ2J5nOsbd4OjgjHO42w/4QNv9gZb3BueV+Vxok5pLEXg==}
+  /streamx@2.15.1:
+    resolution: {integrity: sha512-fQMzy2O/Q47rgwErk/eGeLu/roaFWV0jVsogDmrszM9uIw8L5OA+t+V93MgYlufNptfjmYR1tOMWhei/Eh7TQA==}
     dependencies:
-      fast-fifo: 1.3.0
+      fast-fifo: 1.3.2
       queue-tick: 1.0.1
     dev: false
 
@@ -1557,8 +1564,8 @@ packages:
     resolution: {integrity: sha512-B/UyjYwPpMBv+PaFSWAmtYjwdrlEaZQEhMIBFNC5oEG8lpiW8XjcSdmEaClj28ArfKScKHs2nshz3k2le6crsg==}
     dependencies:
       b4a: 1.6.4
-      fast-fifo: 1.3.0
-      streamx: 2.15.0
+      fast-fifo: 1.3.2
+      streamx: 2.15.1
     dev: false
 
   /tar@6.1.15:
@@ -1598,6 +1605,11 @@ packages:
 
   /type-fest@4.2.0:
     resolution: {integrity: sha512-5zknd7Dss75pMSED270A1RQS3KloqRJA9XbXLe0eCxyw7xXFb3rd+9B0UQ/0E+LQT6lnrLviEolYORlRWamn4w==}
+    engines: {node: '>=16'}
+    dev: false
+
+  /type-fest@4.3.1:
+    resolution: {integrity: sha512-pphNW/msgOUSkJbH58x8sqpq8uQj6b0ZKGxEsLKMUnGorRcDjrUaLS+39+/ub41JNTwrrMyJcUB8+YZs3mbwqw==}
     engines: {node: '>=16'}
     dev: false
 
