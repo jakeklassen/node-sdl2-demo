@@ -9,8 +9,8 @@ dependencies:
     specifier: 6.0.2-1
     version: 6.0.2-1
   '@kmamal/sdl':
-    specifier: ^0.7.8
-    version: 0.7.8
+    specifier: ^0.8.0
+    version: 0.8.0
   '@napi-rs/canvas':
     specifier: ^0.1.44
     version: 0.1.44
@@ -91,8 +91,8 @@ packages:
       tar: 6.1.15
     dev: true
 
-  /@kmamal/sdl@0.7.8:
-    resolution: {integrity: sha512-NvJT1/DJS9Zekxt5cIwEHUTeL6KDey2uTXXG1vy3tf/NGLawELUq3adlZz4UDUvPmHM8p6ddRfdN+p+POXtmsA==}
+  /@kmamal/sdl@0.8.0:
+    resolution: {integrity: sha512-XKXzRv/7wr8u5qhJrXG68UCbEmkJ5zKUqSmhHIB9dbI/bKdJQlhL+R8BvVQzi9JZ6HG/giBkF88523y8WLgdVQ==}
     requiresBuild: true
     dependencies:
       tar: 6.1.15
