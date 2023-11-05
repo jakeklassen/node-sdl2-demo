@@ -9,8 +9,8 @@ dependencies:
     specifier: 6.0.2-1
     version: 6.0.2-1
   '@kmamal/sdl':
-    specifier: ^0.8.4
-    version: 0.8.4
+    specifier: ^0.9.0
+    version: 0.9.0
   '@napi-rs/canvas':
     specifier: ^0.1.44
     version: 0.1.44
@@ -91,8 +91,8 @@ packages:
       tar: 6.1.15
     dev: true
 
-  /@kmamal/sdl@0.8.4:
-    resolution: {integrity: sha512-v7jMFqPy1Qjold2F1bqfmIh8gTj3kpsBBqzpSkocAGOC+t8h7BgMy2VBvk6jeb8t/ECY1afeotiG8KyvVBsV+A==}
+  /@kmamal/sdl@0.9.0:
+    resolution: {integrity: sha512-dnFGWN3fU9eRlFq6I/+ttH4HOFtNSBFfJl7RDZ6EZFZoUVGtQ5uub4GrdHwVSytSgn3YGp2tLeeC2smxk+MXJA==}
     requiresBuild: true
     dependencies:
       tar: 6.2.0
@@ -110,7 +110,7 @@ packages:
       npmlog: 5.0.1
       rimraf: 3.0.2
       semver: 7.5.1
-      tar: 6.1.15
+      tar: 6.2.0
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -423,7 +423,7 @@ packages:
       promise-inflight: 1.0.1
       rimraf: 3.0.2
       ssri: 9.0.1
-      tar: 6.1.15
+      tar: 6.2.0
       unique-filename: 2.0.1
     transitivePeerDependencies:
       - bluebird
@@ -1134,7 +1134,7 @@ packages:
       npmlog: 6.0.2
       rimraf: 3.0.2
       semver: 7.5.1
-      tar: 6.1.15
+      tar: 6.2.0
       which: 2.0.2
     transitivePeerDependencies:
       - bluebird
