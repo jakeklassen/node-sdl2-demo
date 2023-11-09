@@ -9,8 +9,8 @@ dependencies:
     specifier: 6.0.2-1
     version: 6.0.2-1
   '@kmamal/sdl':
-    specifier: ^0.8.4
-    version: 0.8.4
+    specifier: ^0.9.0
+    version: 0.9.0
   '@napi-rs/canvas':
     specifier: ^0.1.44
     version: 0.1.44
@@ -24,8 +24,8 @@ dependencies:
     specifier: ^5.2.0
     version: 5.2.0
   node-web-audio-api:
-    specifier: ^0.12.0
-    version: 0.12.0
+    specifier: ^0.13.0
+    version: 0.13.0
   objecs:
     specifier: ^0.0.18
     version: 0.0.18
@@ -33,16 +33,16 @@ dependencies:
     specifier: ^0.32.6
     version: 0.32.6
   type-fest:
-    specifier: ^4.6.0
-    version: 4.6.0
+    specifier: ^4.7.1
+    version: 4.7.1
 
 devDependencies:
   '@kmamal/packager':
     specifier: ^0.1.3
     version: 0.1.3
   '@types/node':
-    specifier: ^20.8.9
-    version: 20.8.9
+    specifier: ^20.9.0
+    version: 20.9.0
 
 packages:
 
@@ -91,8 +91,8 @@ packages:
       tar: 6.1.15
     dev: true
 
-  /@kmamal/sdl@0.8.4:
-    resolution: {integrity: sha512-v7jMFqPy1Qjold2F1bqfmIh8gTj3kpsBBqzpSkocAGOC+t8h7BgMy2VBvk6jeb8t/ECY1afeotiG8KyvVBsV+A==}
+  /@kmamal/sdl@0.9.0:
+    resolution: {integrity: sha512-dnFGWN3fU9eRlFq6I/+ttH4HOFtNSBFfJl7RDZ6EZFZoUVGtQ5uub4GrdHwVSytSgn3YGp2tLeeC2smxk+MXJA==}
     requiresBuild: true
     dependencies:
       tar: 6.2.0
@@ -110,7 +110,7 @@ packages:
       npmlog: 5.0.1
       rimraf: 3.0.2
       semver: 7.5.1
-      tar: 6.1.15
+      tar: 6.2.0
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -212,8 +212,8 @@ packages:
       '@napi-rs/canvas-win32-x64-msvc': 0.1.44
     dev: false
 
-  /@napi-rs/cli@2.16.1:
-    resolution: {integrity: sha512-L0Gr5iEQIDEbvWdDr1HUaBOxBSHL1VZhWSk1oryawoT8qJIY+KGfLFelU+Qma64ivCPbxYpkfPoKYVG3rcoGIA==}
+  /@napi-rs/cli@2.16.5:
+    resolution: {integrity: sha512-mFEzwrg4IOLngGd2/P6yeqIWgwQNn59Z08n1rndu6kLDq1gg954NH9cM1O9Da0RJuybt46p43lqgSsnAY2mxqA==}
     engines: {node: '>= 10'}
     hasBin: true
     dev: false
@@ -275,8 +275,8 @@ packages:
     resolution: {integrity: sha512-F0KIgDJfy2nA3zMLmWGKxcH2ZVEtCZXHHdOQs2gSaQ27+lNeEfGxzkIw90aXswATX7AZ33tahPbzy6KAfUreVw==}
     dev: false
 
-  /@types/node@20.8.9:
-    resolution: {integrity: sha512-UzykFsT3FhHb1h7yD4CA4YhBHq545JC0YnEz41xkipN88eKQtL6rSgocL5tbAP6Ola9Izm/Aw4Ora8He4x0BHg==}
+  /@types/node@20.9.0:
+    resolution: {integrity: sha512-nekiGu2NDb1BcVofVcEKMIwzlx4NjHlcjhoxxKBNLtz15Y1z7MYf549DFvkHSId02Ax6kGwWntIBPC3l/JZcmw==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -1141,11 +1141,11 @@ packages:
       - supports-color
     dev: false
 
-  /node-web-audio-api@0.12.0:
-    resolution: {integrity: sha512-wqNS4R6JMREIrKCejXensAFft4P43Tov0YjafxlwvXV/Uf66zFIu9u6hZ2H/7JerrhJlu68BL+hPFfP+qhEOfw==}
+  /node-web-audio-api@0.13.0:
+    resolution: {integrity: sha512-K7Mpu4ZoG9DwZb2dYdA6OGUBrP1v/gj6WWAjZD/niXrf8oKsy3N8RLKFPZ3l+23ZSBkb9lYXMy9mcJXatK49iw==}
     engines: {node: '>= 14'}
     dependencies:
-      '@napi-rs/cli': 2.16.1
+      '@napi-rs/cli': 2.16.5
       '@node-rs/helper': 1.3.3
     dev: false
 
@@ -1622,8 +1622,8 @@ packages:
     engines: {node: '>=16'}
     dev: false
 
-  /type-fest@4.6.0:
-    resolution: {integrity: sha512-rLjWJzQFOq4xw7MgJrCZ6T1jIOvvYElXT12r+y0CC6u67hegDHaxcPqb2fZHOGlqxugGQPNB1EnTezjBetkwkw==}
+  /type-fest@4.7.1:
+    resolution: {integrity: sha512-iWr8RUmzAJRfhZugX9O7nZE6pCxDU8CZ3QxsLuTnGcBLJpCaP2ll3s4eMTBoFnU/CeXY/5rfQSuAEsTGJO4y8A==}
     engines: {node: '>=16'}
     dev: false
 
