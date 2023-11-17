@@ -9,8 +9,8 @@ dependencies:
     specifier: 6.0.2-1
     version: 6.0.2-1
   '@kmamal/sdl':
-    specifier: ^0.9.0
-    version: 0.9.0
+    specifier: ^0.9.1
+    version: 0.9.1
   '@napi-rs/canvas':
     specifier: ^0.1.44
     version: 0.1.44
@@ -33,16 +33,16 @@ dependencies:
     specifier: ^0.32.6
     version: 0.32.6
   type-fest:
-    specifier: ^4.7.1
-    version: 4.7.1
+    specifier: ^4.8.1
+    version: 4.8.1
 
 devDependencies:
   '@kmamal/packager':
     specifier: ^0.1.3
     version: 0.1.3
   '@types/node':
-    specifier: ^20.9.0
-    version: 20.9.0
+    specifier: ^20.9.1
+    version: 20.9.1
 
 packages:
 
@@ -91,8 +91,8 @@ packages:
       tar: 6.1.15
     dev: true
 
-  /@kmamal/sdl@0.9.0:
-    resolution: {integrity: sha512-dnFGWN3fU9eRlFq6I/+ttH4HOFtNSBFfJl7RDZ6EZFZoUVGtQ5uub4GrdHwVSytSgn3YGp2tLeeC2smxk+MXJA==}
+  /@kmamal/sdl@0.9.1:
+    resolution: {integrity: sha512-n35PNsGuSOz+4bH441l1Vgk6H7h0yIqt8KhfKJvkxMZHFYjL1apADiRecPGY3irxALvh5fgLHqPuab3ATTrgRg==}
     requiresBuild: true
     dependencies:
       tar: 6.2.0
@@ -275,8 +275,8 @@ packages:
     resolution: {integrity: sha512-F0KIgDJfy2nA3zMLmWGKxcH2ZVEtCZXHHdOQs2gSaQ27+lNeEfGxzkIw90aXswATX7AZ33tahPbzy6KAfUreVw==}
     dev: false
 
-  /@types/node@20.9.0:
-    resolution: {integrity: sha512-nekiGu2NDb1BcVofVcEKMIwzlx4NjHlcjhoxxKBNLtz15Y1z7MYf549DFvkHSId02Ax6kGwWntIBPC3l/JZcmw==}
+  /@types/node@20.9.1:
+    resolution: {integrity: sha512-HhmzZh5LSJNS5O8jQKpJ/3ZcrrlG6L70hpGqMIAoM9YVD0YBRNWYsfwcXq8VnSjlNpCpgLzMXdiPo+dxcvSmiA==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -1622,8 +1622,8 @@ packages:
     engines: {node: '>=16'}
     dev: false
 
-  /type-fest@4.7.1:
-    resolution: {integrity: sha512-iWr8RUmzAJRfhZugX9O7nZE6pCxDU8CZ3QxsLuTnGcBLJpCaP2ll3s4eMTBoFnU/CeXY/5rfQSuAEsTGJO4y8A==}
+  /type-fest@4.8.1:
+    resolution: {integrity: sha512-ShaaYnjf+0etG8W/FumARKMjjIToy/haCaTjN2dvcewOSoNqCQzdgG7m2JVOlM5qndGTHjkvsrWZs+k/2Z7E0Q==}
     engines: {node: '>=16'}
     dev: false
 
