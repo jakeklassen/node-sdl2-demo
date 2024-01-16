@@ -27,8 +27,8 @@ dependencies:
     specifier: ^0.15.0
     version: 0.15.0
   objecs:
-    specifier: ^0.0.20
-    version: 0.0.20
+    specifier: ^0.0.21
+    version: 0.0.21
   sharp:
     specifier: ^0.33.1
     version: 0.33.1
@@ -1289,8 +1289,8 @@ packages:
       set-blocking: 2.0.0
     dev: false
 
-  /objecs@0.0.20:
-    resolution: {integrity: sha512-ZNPcWgGhDLLqD9tf3FfVWOiJesiBvkMx6X0nLDTBgcf4dE5YmpFo2/JelJXUKkmoVUqm3VRGa8jeETMZpRpRRw==}
+  /objecs@0.0.21:
+    resolution: {integrity: sha512-qOp70AKBN8RzWKTyvyO302tK8l6Ac6BvnLeUF7CDFUOPBO220wlIDyFX8FtwEkusV5XMR4WHriTMBQF/lhLosQ==}
     dependencies:
       type-fest: 4.9.0
     dev: false
