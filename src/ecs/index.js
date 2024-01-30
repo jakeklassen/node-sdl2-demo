@@ -7,8 +7,10 @@ import { movementSystemFactory } from "./systems/movement-system.js";
 import { starfieldRenderingSystemFactory } from "./systems/starfield-rendering-system.js";
 import { starfieldSystemFactory } from "./systems/starfield-system.js";
 import { spriteRenderingSystemFactory } from "./systems/sprite-rendering-system.js";
+import { writeFile } from "fs/promises";
 
 registerFont("assets/fonts/pico-8.ttf", { family: "PICO-8" });
+
 const gameWidth = 128;
 const gameHeight = 128;
 const scale = 4;
@@ -26,6 +28,8 @@ const canvas = Canvas.createCanvas(gameWidth, gameHeight);
 
 const context = canvas.getContext("2d");
 context.imageSmoothingEnabled = false;
+context.antialias = "none";
+context.quality = "nearest";
 
 /**
  * @type {World<import("./entity.js").Entity>}
@@ -101,7 +105,11 @@ while (!window.destroyed) {
 	context.lineWidth = 1;
 
 	const textMetrics = context.measureText("Cherry Bomb");
-	context.fillText("Cherry Bomb", canvas.width / 2 - textMetrics.width / 2, 8);
+	context.fillText(
+		"Cherry Bomb",
+		(canvas.width / 2 - textMetrics.width / 2) | 0,
+		8,
+	);
 
 	const buffer = canvas.toBuffer("raw");
 
