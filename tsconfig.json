@@ -8,5 +8,5 @@
 		"target": "ESNext",
 		"module": "NodeNext"
 	},
-	"include": ["src/**/*.js", "src/**/*.ts"]
+	"include": ["src/**/*.js", "src/**/*.ts", "scripts/**/*.js"]
 }
