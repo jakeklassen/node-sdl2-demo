@@ -39,7 +39,7 @@ dependencies:
 devDependencies:
   '@kmamal/packager':
     specifier: ^0.2.0
-    version: 0.2.1
+    version: 0.2.3
   '@types/node':
     specifier: ^20.11.17
     version: 20.11.22
@@ -280,8 +280,8 @@ packages:
       - supports-color
     dev: false
 
-  /@kmamal/packager@0.2.1:
-    resolution: {integrity: sha512-YwNnuGOICKl+UwOTLqWg7yYumlJOzFTQkiywvueU/mviv+HTtraYlo30wZvHRHa2wDXbC762Q7InxtQcBqXVEg==}
+  /@kmamal/packager@0.2.3:
+    resolution: {integrity: sha512-WOjUBZTRASYdsutFfEenz+DeA4NsNCpaOT4aU+5b5nODfTbND5u6YEm7KzY53QlOSxxTR3nl7uFoHwoZ3GaXgw==}
     hasBin: true
     dependencies:
       7zip-bin: 5.2.0
