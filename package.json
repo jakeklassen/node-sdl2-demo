@@ -20,11 +20,11 @@
 		"node-web-audio-api": "^0.17.0",
 		"objecs": "^0.0.21",
 		"sharp": "^0.33.2",
-		"type-fest": "^4.10.2"
+		"type-fest": "^4.12.0"
 	},
 	"devDependencies": {
 		"@kmamal/packager": "^0.2.0",
-		"@types/node": "^20.11.25",
+		"@types/node": "^20.11.26",
 		"zx": "^7.2.3"
 	}
 }
