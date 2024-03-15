@@ -41,7 +41,7 @@ devDependencies:
     specifier: ^0.2.0
     version: 0.2.3
   '@types/node':
-    specifier: ^20.11.26
+    specifier: ^20.11.28
     version: 20.11.28
   zx:
     specifier: ^7.2.3

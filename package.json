@@ -24,7 +24,7 @@
 	},
 	"devDependencies": {
 		"@kmamal/packager": "^0.2.0",
-		"@types/node": "^20.11.26",
+		"@types/node": "^20.11.28",
 		"zx": "^7.2.3"
 	}
 }
