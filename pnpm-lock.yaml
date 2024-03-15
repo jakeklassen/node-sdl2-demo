@@ -42,7 +42,7 @@ devDependencies:
     version: 0.2.3
   '@types/node':
     specifier: ^20.11.26
-    version: 20.11.27
+    version: 20.11.28
   zx:
     specifier: ^7.2.3
     version: 7.2.3
@@ -480,13 +480,13 @@ packages:
     resolution: {integrity: sha512-yTbItCNreRooED33qjunPthRcSjERP1r4MqCZc7wv0u2sUkzTFp45tgUfS5+r7FrZPdmCCNflLhVSP/o+SemsQ==}
     dependencies:
       '@types/jsonfile': 6.1.4
-      '@types/node': 20.11.27
+      '@types/node': 20.11.28
     dev: true
 
   /@types/jsonfile@6.1.4:
     resolution: {integrity: sha512-D5qGUYwjvnNNextdU59/+fI+spnwtTFmyQP0h+PfIOSkNfpU6AOICUOkm4i0OnSk+NyjdPJrxCDro0sJsWlRpQ==}
     dependencies:
-      '@types/node': 20.11.27
+      '@types/node': 20.11.28
     dev: true
 
   /@types/minimist@1.2.5:
@@ -503,8 +503,8 @@ packages:
       undici-types: 5.26.5
     dev: true
 
-  /@types/node@20.11.27:
-    resolution: {integrity: sha512-qyUZfMnCg1KEz57r7pzFtSGt49f6RPkPBis3Vo4PbS7roQEDn22hiHzl/Lo1q4i4hDEgBJmBF/NTNg2XR0HbFg==}
+  /@types/node@20.11.28:
+    resolution: {integrity: sha512-M/GPWVS2wLkSkNHVeLkrF2fD5Lx5UC4PxA0uZcKc6QqbIQUJyW1jVjueJYi1z8n0I5PxYrtpnPnWglE+y9A0KA==}
     dependencies:
       undici-types: 5.26.5
     dev: true
