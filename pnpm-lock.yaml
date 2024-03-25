@@ -30,10 +30,10 @@ dependencies:
     specifier: ^0.0.21
     version: 0.0.21
   sharp:
-    specifier: ^0.33.2
+    specifier: ^0.33.3
     version: 0.33.3
   type-fest:
-    specifier: ^4.12.0
+    specifier: ^4.14.0
     version: 4.14.0
 
 devDependencies:
@@ -41,7 +41,7 @@ devDependencies:
     specifier: ^0.2.0
     version: 0.2.3
   '@types/node':
-    specifier: ^20.11.28
+    specifier: ^20.11.30
     version: 20.11.30
   zx:
     specifier: ^7.2.3
@@ -295,7 +295,7 @@ packages:
     resolution: {integrity: sha512-mMkze0OXpFaa8wcS4mJhEbhwu+OcpBgONv8dJv+T65DdCNLPg9DGBCPl1EM9NNLsTBlcRTEnj0Hr8Zbfou0awA==}
     requiresBuild: true
     dependencies:
-      tar: 6.2.0
+      tar: 6.2.1
     dev: false
 
   /@mapbox/node-pre-gyp@1.0.10:
@@ -1840,6 +1840,18 @@ packages:
       minizlib: 2.1.2
       mkdirp: 1.0.4
       yallist: 4.0.0
+
+  /tar@6.2.1:
+    resolution: {integrity: sha512-DZ4yORTwrbTj/7MZYq2w+/ZFdI6OZ/f9SFHR+71gIVUZhOQPHzVCLpvRnPgyaMpfWxxk/4ONva3GQSyNIKRv6A==}
+    engines: {node: '>=10'}
+    dependencies:
+      chownr: 2.0.0
+      fs-minipass: 2.1.0
+      minipass: 5.0.0
+      minizlib: 2.1.2
+      mkdirp: 1.0.4
+      yallist: 4.0.0
+    dev: false
 
   /through2@0.6.5:
     resolution: {integrity: sha512-RkK/CCESdTKQZHdmKICijdKKsCRVHs5KsLZ6pACAmF/1GPUQhonHSXWNERctxEp7RmvjdNbZTL5z9V7nSCXKcg==}
