@@ -7,7 +7,6 @@ import { movementSystemFactory } from "./systems/movement-system.js";
 import { starfieldRenderingSystemFactory } from "./systems/starfield-rendering-system.js";
 import { starfieldSystemFactory } from "./systems/starfield-system.js";
 import { spriteRenderingSystemFactory } from "./systems/sprite-rendering-system.js";
-import { writeFile } from "fs/promises";
 
 registerFont("assets/fonts/pico-8.ttf", { family: "PICO-8" });
 
