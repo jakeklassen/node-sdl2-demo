@@ -27,8 +27,8 @@ dependencies:
     specifier: ^0.18.0
     version: 0.18.0
   objecs:
-    specifier: ^0.0.21
-    version: 0.0.21
+    specifier: ^0.0.22
+    version: 0.0.22
   sharp:
     specifier: ^0.33.3
     version: 0.33.3
@@ -1350,10 +1350,10 @@ packages:
       set-blocking: 2.0.0
     dev: false
 
-  /objecs@0.0.21:
-    resolution: {integrity: sha512-qOp70AKBN8RzWKTyvyO302tK8l6Ac6BvnLeUF7CDFUOPBO220wlIDyFX8FtwEkusV5XMR4WHriTMBQF/lhLosQ==}
+  /objecs@0.0.22:
+    resolution: {integrity: sha512-Al8H6VKm9pMXVWn+7mYeKY0/zqLuSKjYMMYgdRnEGlSHTLvbttuH/EsIn+nDS4ezMJjqwyZrB4xfzLNOSf7bog==}
     dependencies:
-      type-fest: 4.9.0
+      type-fest: 4.15.0
     dev: false
 
   /object-assign@4.1.1:
@@ -1725,11 +1725,6 @@ packages:
 
   /type-fest@4.15.0:
     resolution: {integrity: sha512-tB9lu0pQpX5KJq54g+oHOLumOx+pMep4RaM6liXh2PKmVRFF+/vAtUP0ZaJ0kOySfVNjF6doBWPHhBhISKdlIA==}
-    engines: {node: '>=16'}
-    dev: false
-
-  /type-fest@4.9.0:
-    resolution: {integrity: sha512-KS/6lh/ynPGiHD/LnAobrEFq3Ad4pBzOlJ1wAnJx9N4EYoqFhMfLIBjUT2UEx4wg5ZE+cC1ob6DCSpppVo+rtg==}
     engines: {node: '>=16'}
     dev: false
 
