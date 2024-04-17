@@ -17,7 +17,7 @@
 		"canvas": "^2.11.2",
 		"execa": "^8.0.1",
 		"ffmpeg-static": "^5.2.0",
-		"node-web-audio-api": "^0.18.0",
+		"node-web-audio-api": "^0.19.0",
 		"objecs": "^0.0.22",
 		"sharp": "^0.33.3",
 		"type-fest": "^4.14.0"
