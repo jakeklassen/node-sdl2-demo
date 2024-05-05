@@ -12,7 +12,7 @@
 	"license": "ISC",
 	"dependencies": {
 		"@kmamal/gl": "6.0.2-1",
-		"@kmamal/sdl": "0.10.4",
+		"@kmamal/sdl": "0.10.6",
 		"@napi-rs/canvas": "^0.1.52",
 		"canvas": "^2.11.2",
 		"execa": "^8.0.1",
