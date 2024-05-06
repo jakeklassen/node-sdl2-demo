@@ -44,7 +44,7 @@ importers:
         version: 0.2.3
       '@types/node':
         specifier: ^20.12.7
-        version: 20.12.9
+        version: 20.12.10
       zx:
         specifier: ^8.0.0
         version: 8.0.2
@@ -311,8 +311,8 @@ packages:
   '@types/node@10.17.60':
     resolution: {integrity: sha512-F0KIgDJfy2nA3zMLmWGKxcH2ZVEtCZXHHdOQs2gSaQ27+lNeEfGxzkIw90aXswATX7AZ33tahPbzy6KAfUreVw==}
 
-  '@types/node@20.12.9':
-    resolution: {integrity: sha512-o93r47yu04MHumPBCFg0bMPBMNgtMg3jzbhl7e68z50+BMHmRMGDJv13eBlUgOdc9i/uoJXGMGYLtJV4ReTXEg==}
+  '@types/node@20.12.10':
+    resolution: {integrity: sha512-Eem5pH9pmWBHoGAT8Dr5fdc5rYA+4NAovdM4EktRPVAAiJhmWWfQrA0cFhAbOsQdSfIHjAud6YdkbL69+zSKjw==}
 
   abbrev@1.1.1:
     resolution: {integrity: sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==}
@@ -1350,17 +1350,17 @@ snapshots:
   '@types/fs-extra@11.0.4':
     dependencies:
       '@types/jsonfile': 6.1.4
-      '@types/node': 20.12.9
+      '@types/node': 20.12.10
     optional: true
 
   '@types/jsonfile@6.1.4':
     dependencies:
-      '@types/node': 20.12.9
+      '@types/node': 20.12.10
     optional: true
 
   '@types/node@10.17.60': {}
 
-  '@types/node@20.12.9':
+  '@types/node@20.12.10':
     dependencies:
       undici-types: 5.26.5
 
@@ -2238,4 +2238,4 @@ snapshots:
   zx@8.0.2:
     optionalDependencies:
       '@types/fs-extra': 11.0.4
-      '@types/node': 20.12.9
+      '@types/node': 20.12.10
