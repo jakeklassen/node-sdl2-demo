@@ -22,7 +22,7 @@ importers:
         version: 2.11.2(encoding@0.1.13)
       execa:
         specifier: ^9.0.0
-        version: 9.0.0
+        version: 9.0.1
       ffmpeg-static:
         specifier: ^5.2.0
         version: 5.2.0
@@ -505,8 +505,8 @@ packages:
   err-code@2.0.3:
     resolution: {integrity: sha512-2bmlRpNKBxT/CRmPOlyISQpNj+qSeYvcym/uT0Jx2bMOlKLtSy1ZmLuVxSEKKyor/N5yhvp/ZiG1oE3DEYMSFA==}
 
-  execa@9.0.0:
-    resolution: {integrity: sha512-YqlYPdTp6UMdt0WEM8QKeBR8ORtgxWP7ZB5NB9AMlfGWg32Fg48j6uZdKfhG2o6cNJBIRPF0Ok93R0vY37oBWQ==}
+  execa@9.0.1:
+    resolution: {integrity: sha512-U5ck8xJmf3sVebV1v+Hh436VWHVHUfzkdbKJynd3kCP9sQRDxCY5x2Tml5lGB7XM6lpj6ATfgWWqynDt2MBLJg==}
     engines: {node: '>=18'}
 
   fast-glob@3.3.2:
@@ -1575,7 +1575,7 @@ snapshots:
 
   err-code@2.0.3: {}
 
-  execa@9.0.0:
+  execa@9.0.1:
     dependencies:
       '@sindresorhus/merge-streams': 4.0.0
       cross-spawn: 7.0.3
