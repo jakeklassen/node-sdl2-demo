@@ -11,7 +11,7 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
-		"@kmamal/gl": "6.0.2-1",
+		"@kmamal/gl": "8.0.2-6",
 		"@kmamal/sdl": "0.10.7",
 		"@napi-rs/canvas": "^0.1.52",
 		"canvas": "^2.11.2",
