@@ -46,8 +46,8 @@ importers:
         specifier: ^20.12.7
         version: 20.12.12
       zx:
-        specifier: ^8.0.0
-        version: 8.1.0
+        specifier: ^8.1.1
+        version: 8.1.1
 
 packages:
 
@@ -1151,8 +1151,8 @@ packages:
     resolution: {integrity: sha512-esbDnt0Z1zI1KgvOZU90hJbL6BkoUbrP9yy7ArNZ6TmxBxydMJTYMf9FZjmwwcA8ZgEQzriQ3hwZ0NYXhlFo8Q==}
     engines: {node: '>=18'}
 
-  zx@8.1.0:
-    resolution: {integrity: sha512-2BCoOK6JTWikAkwPCV2dFr+1ou29WoY+6XltLu+Ou9dvxrqm/p+HuHCgBtMRMIVFexQzUSGfB5VbYeY8XmGBPQ==}
+  zx@8.1.1:
+    resolution: {integrity: sha512-JYAyM06wK+KLy07MkipBTghtd3zsYBxTH44Fh3p932ntDKdT5jxziEK51siPG+rqT+MWV1yK9mCM1/CB92PV7Q==}
     engines: {node: '>= 12.17.0'}
     hasBin: true
 
@@ -2270,7 +2270,7 @@ snapshots:
 
   yoctocolors@2.0.0: {}
 
-  zx@8.1.0:
+  zx@8.1.1:
     optionalDependencies:
       '@types/fs-extra': 11.0.4
       '@types/node': 20.12.12
