@@ -30,8 +30,8 @@ importers:
         specifier: ^0.21.0
         version: 0.21.1
       objecs:
-        specifier: ^0.0.22
-        version: 0.0.22
+        specifier: ^0.0.23
+        version: 0.0.23
       sharp:
         specifier: ^0.33.3
         version: 0.33.4
@@ -851,8 +851,8 @@ packages:
     resolution: {integrity: sha512-AqZtDUWOMKs1G/8lwylVjrdYgqA4d9nu8hc+0gzRxlDb1I10+FHBGMXs6aiQHFdCUUlqH99MUMuLfzWDNDtfxw==}
     deprecated: This package is no longer supported.
 
-  objecs@0.0.22:
-    resolution: {integrity: sha512-Al8H6VKm9pMXVWn+7mYeKY0/zqLuSKjYMMYgdRnEGlSHTLvbttuH/EsIn+nDS4ezMJjqwyZrB4xfzLNOSf7bog==}
+  objecs@0.0.23:
+    resolution: {integrity: sha512-/pa/RqddSRXGIaZuQPTTL1ckM3E2h7aXl8+QKUnHkPAkkVnBEeQweDU38TgiYoZ/Wl5ffUGpoFb+2xfI2bbvZw==}
 
   object-assign@4.1.1:
     resolution: {integrity: sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==}
@@ -1074,10 +1074,6 @@ packages:
 
   tslib@2.6.2:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
-
-  type-fest@4.15.0:
-    resolution: {integrity: sha512-tB9lu0pQpX5KJq54g+oHOLumOx+pMep4RaM6liXh2PKmVRFF+/vAtUP0ZaJ0kOySfVNjF6doBWPHhBhISKdlIA==}
-    engines: {node: '>=16'}
 
   type-fest@4.20.0:
     resolution: {integrity: sha512-MBh+PHUHHisjXf4tlx0CFWoMdjx8zCMLJHOjnV1prABYZFHqtFOyauCIK2/7w4oIfwkF8iNhLtnJEfVY2vn3iw==}
@@ -1972,9 +1968,9 @@ snapshots:
       gauge: 3.0.2
       set-blocking: 2.0.0
 
-  objecs@0.0.22:
+  objecs@0.0.23:
     dependencies:
-      type-fest: 4.15.0
+      type-fest: 4.20.0
 
   object-assign@4.1.1: {}
 
@@ -2210,8 +2206,6 @@ snapshots:
 
   tslib@2.6.2:
     optional: true
-
-  type-fest@4.15.0: {}
 
   type-fest@4.20.0: {}
 
