@@ -18,7 +18,7 @@
 		"execa": "^9.0.0",
 		"ffmpeg-static": "^5.2.0",
 		"node-web-audio-api": "^0.21.0",
-		"objecs": "^0.0.24",
+		"objecs": "^0.0.25",
 		"sharp": "^0.33.3",
 		"type-fest": "^4.14.0"
 	},
