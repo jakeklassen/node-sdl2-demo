@@ -13,7 +13,7 @@
 	"dependencies": {
 		"@kmamal/gl": "8.0.2-6",
 		"@kmamal/sdl": "0.10.7",
-		"@napi-rs/canvas": "^0.1.54",
+		"@napi-rs/canvas": "^0.1.55",
 		"canvas": "^2.11.2",
 		"execa": "^9.3.1",
 		"ffmpeg-static": "^5.2.0",
@@ -24,7 +24,7 @@
 	},
 	"devDependencies": {
 		"@kmamal/packager": "^0.2.3",
-		"@types/node": "^22.5.1",
-		"zx": "^8.1.4"
+		"@types/node": "^22.5.4",
+		"zx": "^8.1.6"
 	}
 }
