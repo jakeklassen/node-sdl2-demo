@@ -28,7 +28,7 @@ importers:
         version: 5.2.0
       node-web-audio-api:
         specifier: ^0.21.1
-        version: 0.21.1
+        version: 0.21.2
       objecs:
         specifier: ^0.0.25
         version: 0.0.25
@@ -806,8 +806,8 @@ packages:
     engines: {node: ^16.14.0 || >=18.0.0}
     hasBin: true
 
-  node-web-audio-api@0.21.1:
-    resolution: {integrity: sha512-kObaZNqvle7SKHRMHqs95Dn4oOdI7t+EwBLqgQt1FdKrwFw/NbEm8p6QN0nrEG/hKkSZNR94kMaa1PAvEkGxFg==}
+  node-web-audio-api@0.21.2:
+    resolution: {integrity: sha512-KokuD8aeKkjSYT5TjAYa9+mDDWLMlzuj/ghlo6+SRxWXWtqGWMtPYjHWE5r+iPP5Fpbf3RwXKmG6Wmgtqscb+Q==}
     engines: {node: '>= 14'}
 
   nopt@5.0.0:
@@ -1905,7 +1905,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  node-web-audio-api@0.21.1:
+  node-web-audio-api@0.21.2:
     dependencies:
       '@napi-rs/cli': 2.18.4
       '@node-rs/helper': 1.6.0
