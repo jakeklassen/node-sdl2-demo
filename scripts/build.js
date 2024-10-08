@@ -1,3 +1,3 @@
 import "zx/globals";
 
-await $`npx packager --include '["src/**/*.js", "assets/**/*", "package*.json"]' --out-dir dist`;
+await $`pnpm packager --include "src/**/*.js" --include "assets/**/*" --include "package*.json" --out-dir dist`;
