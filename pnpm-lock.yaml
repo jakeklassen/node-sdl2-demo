@@ -47,7 +47,7 @@ importers:
         version: 22.10.1
       zx:
         specifier: ^8.1.9
-        version: 8.2.3
+        version: 8.2.4
 
 packages:
 
@@ -1134,8 +1134,8 @@ packages:
     resolution: {integrity: sha512-GQHQqAopRhwU8Kt1DDM8NjibDXHC8eoh1erhGAJPEyveY9qqVeXvVikNKrDz69sHowPMorbPUrH/mx8c50eiBQ==}
     engines: {node: '>=18'}
 
-  zx@8.2.3:
-    resolution: {integrity: sha512-tWPNitCrKVUmFkUN+yh72+ODi6hG9GkMfo8ixV/SkRbqQPGJ/aGLtaupOoSd/nCiM/oGQxDJCl+3FjQHwLG6zQ==}
+  zx@8.2.4:
+    resolution: {integrity: sha512-g9wVU+5+M+zVen/3IyAZfsZFmeqb6vDfjqFggakviz5uLK7OAejOirX+jeTOkyvAh/OYRlCgw+SdqzN7F61QVQ==}
     engines: {node: '>= 12.17.0'}
     hasBin: true
 
@@ -2235,7 +2235,7 @@ snapshots:
 
   yoctocolors@2.1.1: {}
 
-  zx@8.2.3:
+  zx@8.2.4:
     optionalDependencies:
       '@types/fs-extra': 11.0.4
       '@types/node': 22.10.1
