@@ -13,18 +13,18 @@
 	"dependencies": {
 		"@kmamal/gl": "8.0.2-6",
 		"@kmamal/sdl": "0.10.7",
-		"@napi-rs/canvas": "^0.1.58",
+		"@napi-rs/canvas": "^0.1.65",
 		"canvas": "^2.11.2",
-		"execa": "^9.4.1",
+		"execa": "^9.5.2",
 		"ffmpeg-static": "^5.2.0",
 		"node-web-audio-api": "^0.21.3",
 		"objecs": "^0.0.26",
 		"sharp": "^0.33.5",
-		"type-fest": "^4.26.0"
+		"type-fest": "^4.30.0"
 	},
 	"devDependencies": {
 		"@kmamal/packager": "^0.2.3",
-		"@types/node": "^22.7.9",
-		"zx": "^8.1.9"
+		"@types/node": "^22.10.1",
+		"zx": "^8.2.4"
 	}
 }

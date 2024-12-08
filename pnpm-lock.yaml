@@ -15,13 +15,13 @@ importers:
         specifier: 0.10.7
         version: 0.10.7
       '@napi-rs/canvas':
-        specifier: ^0.1.58
+        specifier: ^0.1.65
         version: 0.1.65
       canvas:
         specifier: ^2.11.2
         version: 2.11.2(encoding@0.1.13)
       execa:
-        specifier: ^9.4.1
+        specifier: ^9.5.2
         version: 9.5.2
       ffmpeg-static:
         specifier: ^5.2.0
@@ -36,17 +36,17 @@ importers:
         specifier: ^0.33.5
         version: 0.33.5
       type-fest:
-        specifier: ^4.26.0
+        specifier: ^4.30.0
         version: 4.30.0
     devDependencies:
       '@kmamal/packager':
         specifier: ^0.2.3
         version: 0.2.3
       '@types/node':
-        specifier: ^22.7.9
+        specifier: ^22.10.1
         version: 22.10.1
       zx:
-        specifier: ^8.1.9
+        specifier: ^8.2.4
         version: 8.2.4
 
 packages:
