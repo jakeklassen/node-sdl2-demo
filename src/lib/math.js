@@ -27,3 +27,5 @@ export const deg2rad = (deg) => (deg * Math.PI) / 180;
  * @returns
  */
 export const rad2deg = (rad) => (rad * 180) / Math.PI;
+
+export const DEG_TO_RAD = Math.PI / 180;
