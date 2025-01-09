@@ -1,6 +1,7 @@
 import { World } from "@jakeklassen/ecs";
 import sdl from "@kmamal/sdl";
 import Canvas, { Image, registerFont } from "canvas";
+import fs from "node:fs";
 import { setTimeout } from "timers/promises";
 import { DEG_TO_RAD } from "../lib/math.js";
 import { Rotator } from "./components/rotator.js";
@@ -14,8 +15,12 @@ import { RotationSystem } from "./systems/rotation-system.js";
 
 registerFont("assets/fonts/pico-8.ttf", { family: "PICO-8" });
 
-const gameWidth = 1024;
-const gameHeight = 768;
+const GAME_WIDTH = 640;
+const GAME_HEIGHT = 360;
+const SCALE = 3;
+
+const gameWidth = GAME_WIDTH * SCALE;
+const gameHeight = GAME_HEIGHT * SCALE;
 
 /**
  * @type {Record<string, Image>}
@@ -33,7 +38,7 @@ const window = sdl.video.createWindow({
 	vsync: false,
 });
 
-const canvas = Canvas.createCanvas(gameWidth, gameHeight);
+const canvas = Canvas.createCanvas(GAME_WIDTH, GAME_HEIGHT);
 
 const context = canvas.getContext("2d");
 context.imageSmoothingEnabled = true;
@@ -69,6 +74,34 @@ function generateImages(cache) {
 	cache.square = new Image();
 	cache.square.src = bufferCanvas.toDataURL();
 
+	{
+		const bufferCanvas = Canvas.createCanvas(64, 64);
+
+		const bufferCtx = bufferCanvas.getContext("2d");
+		bufferCtx.imageSmoothingEnabled = false;
+		bufferCtx.globalCompositeOperation = "lighter";
+		bufferCtx.shadowColor = "white";
+		bufferCtx.shadowBlur = 6;
+
+		// Square
+		bufferCtx.globalAlpha = 0.5;
+		bufferCtx.strokeStyle = "white";
+		bufferCtx.lineWidth = 5;
+		bufferCtx.strokeRect(15, 15, 34, 34);
+
+		// Overlay
+		bufferCtx.globalAlpha = 0.8;
+		bufferCtx.strokeStyle = "white";
+		bufferCtx.lineWidth = 8;
+		bufferCtx.strokeRect(15, 15, 34, 34);
+
+		fs.mkdirSync("./assets/image", { recursive: true });
+		fs.writeFileSync(
+			`./assets/image/square.png`,
+			bufferCanvas.toBuffer("image/png"),
+		);
+	}
+
 	bufferCtx.clearRect(0, 0, bufferCanvas.width, bufferCanvas.height);
 
 	// Ship base
@@ -89,6 +122,76 @@ function generateImages(cache) {
 
 	cache.player = new Image();
 	cache.player.src = bufferCanvas.toDataURL();
+
+	{
+		const bufferCanvas = Canvas.createCanvas(64, 64);
+
+		const bufferCtx = bufferCanvas.getContext("2d");
+		bufferCtx.imageSmoothingEnabled = false;
+		bufferCtx.globalCompositeOperation = "lighter";
+		bufferCtx.shadowColor = "white";
+		bufferCtx.shadowBlur = 6;
+
+		// Ship base
+		bufferCtx.globalAlpha = 0.5;
+		bufferCtx.strokeStyle = "white";
+		bufferCtx.lineWidth = 3;
+		bufferCtx.beginPath();
+		bufferCtx.arc(32, 32, 18, 0, Math.PI * 2, true);
+		bufferCtx.stroke();
+
+		fs.mkdirSync("./assets/image", { recursive: true });
+		fs.writeFileSync(
+			`./assets/image/ship_base.png`,
+			bufferCanvas.toBuffer("image/png"),
+		);
+
+		bufferCtx.clearRect(0, 0, bufferCanvas.width, bufferCanvas.height);
+
+		// Ship overlay
+		bufferCtx.globalAlpha = 0.8;
+		bufferCtx.strokeStyle = "white";
+		bufferCtx.lineWidth = 8;
+		bufferCtx.beginPath();
+		bufferCtx.arc(32, 32, 18, 0, Math.PI * 2, true);
+		bufferCtx.stroke();
+
+		fs.mkdirSync("./assets/image", { recursive: true });
+		fs.writeFileSync(
+			`./assets/image/ship_overlay.png`,
+			bufferCanvas.toBuffer("image/png"),
+		);
+
+		// Single image
+		bufferCtx.clearRect(0, 0, bufferCanvas.width, bufferCanvas.height);
+
+		bufferCtx.imageSmoothingEnabled = false;
+		bufferCtx.globalCompositeOperation = "lighter";
+		bufferCtx.shadowColor = "red";
+		bufferCtx.shadowBlur = 6;
+
+		// Ship base
+		bufferCtx.globalAlpha = 0.5;
+		bufferCtx.strokeStyle = "white";
+		bufferCtx.lineWidth = 3;
+		bufferCtx.beginPath();
+		bufferCtx.arc(32, 32, 18, 0, Math.PI * 2, true);
+		bufferCtx.stroke();
+
+		// Ship overlay
+		bufferCtx.globalAlpha = 0.8;
+		bufferCtx.strokeStyle = "green";
+		bufferCtx.lineWidth = 8;
+		bufferCtx.beginPath();
+		bufferCtx.arc(32, 32, 18, 0, Math.PI * 2, true);
+		bufferCtx.stroke();
+
+		fs.mkdirSync("./assets/image", { recursive: true });
+		fs.writeFileSync(
+			`./assets/image/ship.png`,
+			bufferCanvas.toBuffer("image/png"),
+		);
+	}
 
 	bufferCtx.clearRect(0, 0, bufferCanvas.width, bufferCanvas.height);
 
@@ -129,11 +232,73 @@ function generateImages(cache) {
 	cache.shipNavigator.src = bufferCanvas.toDataURL();
 
 	bufferCtx.clearRect(0, 0, bufferCanvas.width, bufferCanvas.height);
+
+	// Bullet
+	{
+		const bufferCanvas = Canvas.createCanvas(16, 32);
+		const offset = 6;
+
+		const bufferCtx = bufferCanvas.getContext("2d");
+		bufferCtx.imageSmoothingEnabled = false;
+		bufferCtx.globalCompositeOperation = "lighter";
+		bufferCtx.shadowColor = "white";
+		bufferCtx.shadowBlur = 6;
+
+		bufferCtx.globalAlpha = 0.5;
+		bufferCtx.strokeStyle = "white";
+		bufferCtx.lineWidth = 2;
+		bufferCtx.beginPath();
+		bufferCtx.moveTo(bufferCanvas.width / 2, offset);
+		bufferCtx.lineTo(bufferCanvas.width / 2, bufferCanvas.height - offset);
+		bufferCtx.closePath();
+		bufferCtx.stroke();
+
+		// Bullet overlay
+		bufferCtx.globalAlpha = 0.8;
+		bufferCtx.strokeStyle = "white";
+		bufferCtx.lineWidth = 2;
+		bufferCtx.beginPath();
+		bufferCtx.moveTo(bufferCanvas.width / 2, offset);
+		bufferCtx.lineTo(bufferCanvas.width / 2, bufferCanvas.height - offset);
+		bufferCtx.closePath();
+		bufferCtx.stroke();
+
+		fs.mkdirSync("./assets/image", { recursive: true });
+		fs.writeFileSync(
+			`./assets/image/bullet.png`,
+			bufferCanvas.toBuffer("image/png"),
+		);
+	}
+
+	bufferCtx.globalAlpha = 0.5;
+	bufferCtx.strokeStyle = "white";
+	bufferCtx.lineWidth = 2;
+	bufferCtx.beginPath();
+	bufferCtx.moveTo(bufferCanvas.width / 2, bufferCanvas.height / 2);
+	bufferCtx.lineTo(bufferCanvas.width / 2, bufferCanvas.height / 2 - 15);
+	bufferCtx.closePath();
+	bufferCtx.stroke();
+
+	// Bullet overlay
+	bufferCtx.globalAlpha = 0.8;
+	bufferCtx.strokeStyle = "red";
+	bufferCtx.lineWidth = 2;
+	bufferCtx.beginPath();
+	bufferCtx.moveTo(bufferCanvas.width / 2, bufferCanvas.height / 2);
+	bufferCtx.lineTo(bufferCanvas.width / 2, bufferCanvas.height / 2 - 15);
+	bufferCtx.closePath();
+	bufferCtx.stroke();
+
+	cache.bullet = new Image();
+	cache.bullet.src = bufferCanvas.toDataURL();
+
+	bufferCtx.clearRect(0, 0, bufferCanvas.width, bufferCanvas.height);
 }
 
 const world = new World();
 
 const player = world.createEntity();
+const bullet = world.createEntity();
 const shipNavigator = world.createEntity();
 const square = world.createEntity();
 
@@ -152,10 +317,17 @@ world.addEntityComponents(
 );
 
 world.addEntityComponents(
+	bullet,
+	new Transform2d(new Vector2d(canvas.width / 2, canvas.height / 2 - 32)),
+	new Sprite(cache.bullet),
+	new Velocity2d(0, 30),
+);
+
+world.addEntityComponents(
 	square,
 	new Transform2d(new Vector2d(0, canvas.height / 2)),
 	new Sprite(cache.square),
-	new Velocity2d(150, 0),
+	new Velocity2d(30, 0),
 	new Rotator(5),
 );
 
@@ -204,7 +376,7 @@ while (!window.destroyed) {
 
 	world.update(variableDt);
 
-	context.font = "20px PICO-8";
+	context.font = `${5 * SCALE}px PICO-8`;
 	context.fillStyle = "#ffffff";
 	context.strokeStyle = "#ffffff";
 	context.lineWidth = 1;
@@ -218,7 +390,7 @@ while (!window.destroyed) {
 
 	const buffer = canvas.toBuffer("raw");
 
-	window.render(gameWidth, gameHeight, gameWidth * 4, "bgra32", buffer);
+	window.render(GAME_WIDTH, GAME_HEIGHT, GAME_WIDTH * 4, "bgra32", buffer);
 
 	await setTimeout(0);
 

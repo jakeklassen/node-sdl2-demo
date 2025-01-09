@@ -2,7 +2,6 @@
 	"name": "node-sdl2-test",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.js",
 	"type": "module",
 	"scripts": {
 		"build": "zx scripts/build.js"
@@ -21,11 +20,12 @@
 		"node-web-audio-api": "^0.21.3",
 		"objecs": "^0.0.26",
 		"sharp": "^0.33.5",
-		"type-fest": "^4.30.1"
+		"type-fest": "^4.32.0"
 	},
 	"devDependencies": {
 		"@kmamal/packager": "^0.2.3",
-		"@types/node": "^22.10.1",
+		"@types/node": "^22.10.5",
+		"typescript": "^5.7.3",
 		"zx": "^8.3.0"
 	}
 }

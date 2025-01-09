@@ -6,7 +6,14 @@
 		"esModuleInterop": true,
 		"strict": true,
 		"target": "ESNext",
-		"module": "NodeNext"
+		"module": "NodeNext",
+		"allowImportingTsExtensions": true,
+		"verbatimModuleSyntax": true
 	},
-	"include": ["src/**/*.js", "src/**/*.ts", "scripts/**/*.js"]
+	"include": [
+		"src/**/*.js",
+		"src/**/*.ts",
+		"scripts/**/*.js",
+		"src/neon-stress/lib/vector2.js"
+	]
 }
