@@ -80,7 +80,7 @@ function generateImages(cache) {
 		const bufferCtx = bufferCanvas.getContext("2d");
 		bufferCtx.imageSmoothingEnabled = false;
 		bufferCtx.globalCompositeOperation = "lighter";
-		bufferCtx.shadowColor = "white";
+		bufferCtx.shadowColor = "red";
 		bufferCtx.shadowBlur = 6;
 
 		// Square
@@ -91,7 +91,7 @@ function generateImages(cache) {
 
 		// Overlay
 		bufferCtx.globalAlpha = 0.8;
-		bufferCtx.strokeStyle = "white";
+		bufferCtx.strokeStyle = "blue";
 		bufferCtx.lineWidth = 8;
 		bufferCtx.strokeRect(15, 15, 34, 34);
 
@@ -129,7 +129,7 @@ function generateImages(cache) {
 		const bufferCtx = bufferCanvas.getContext("2d");
 		bufferCtx.imageSmoothingEnabled = false;
 		bufferCtx.globalCompositeOperation = "lighter";
-		bufferCtx.shadowColor = "white";
+		bufferCtx.shadowColor = "red";
 		bufferCtx.shadowBlur = 6;
 
 		// Ship base
@@ -150,7 +150,7 @@ function generateImages(cache) {
 
 		// Ship overlay
 		bufferCtx.globalAlpha = 0.8;
-		bufferCtx.strokeStyle = "white";
+		bufferCtx.strokeStyle = "green";
 		bufferCtx.lineWidth = 8;
 		bufferCtx.beginPath();
 		bufferCtx.arc(32, 32, 18, 0, Math.PI * 2, true);
