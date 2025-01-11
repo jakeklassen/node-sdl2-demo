@@ -2,9 +2,9 @@ import { AudioContext, GainNode } from "node-web-audio-api";
 import fs from "node:fs";
 import { setTimeout } from "node:timers/promises";
 
-const titleScreenMusicBuffer = fs.createReadStream(
+const titleScreenMusicBuffer = fs.readFileSync(
 	"assets/audio/title-screen-music.wav",
-);
+).buffer;
 
 const audioContext = new AudioContext();
 const gainNode = new GainNode(audioContext);
