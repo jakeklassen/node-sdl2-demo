@@ -12,7 +12,7 @@
 	"license": "ISC",
 	"dependencies": {
 		"@jakeklassen/ecs": "^4.0.7",
-		"@kmamal/gl": "8.0.2-6",
+		"@kmamal/gl": "8.1.6-2",
 		"@kmamal/sdl": "0.10.7",
 		"@napi-rs/canvas": "^0.1.65",
 		"canvas": "^3.0.0",
@@ -21,7 +21,7 @@
 		"node-web-audio-api": "^1.0.1",
 		"objecs": "^0.0.26",
 		"sharp": "^0.33.5",
-		"type-fest": "^4.32.0"
+		"type-fest": "^4.33.0"
 	},
 	"devDependencies": {
 		"@kmamal/packager": "^0.2.3",
