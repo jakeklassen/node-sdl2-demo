@@ -18,7 +18,7 @@ importers:
         specifier: 0.10.12
         version: 0.10.12
       '@napi-rs/canvas':
-        specifier: ^0.1.65
+        specifier: ^0.1.66
         version: 0.1.66
       canvas:
         specifier: ^3.1.0
@@ -46,13 +46,13 @@ importers:
         specifier: ^0.2.3
         version: 0.2.3
       '@types/node':
-        specifier: ^22.12.0
+        specifier: ^22.13.1
         version: 22.13.1
       typescript:
         specifier: ^5.7.3
         version: 5.7.3
       zx:
-        specifier: ^8.3.1
+        specifier: ^8.3.2
         version: 8.3.2
 
 packages:
