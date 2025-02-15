@@ -15,8 +15,8 @@ importers:
         specifier: 8.1.6-2
         version: 8.1.6-2
       '@kmamal/sdl':
-        specifier: 0.10.12
-        version: 0.10.12
+        specifier: 0.10.13
+        version: 0.10.13
       '@napi-rs/canvas':
         specifier: ^0.1.66
         version: 0.1.67
@@ -359,8 +359,8 @@ packages:
     resolution: {integrity: sha512-WOjUBZTRASYdsutFfEenz+DeA4NsNCpaOT4aU+5b5nODfTbND5u6YEm7KzY53QlOSxxTR3nl7uFoHwoZ3GaXgw==}
     hasBin: true
 
-  '@kmamal/sdl@0.10.12':
-    resolution: {integrity: sha512-uFBy9/i3fNQ4VCjKhyWxr74+LRNTke3eDlvAc/qpzGsQBtOtSB6wfmUshofAYUXQ5j0fLY1nd+Tt42QdzqlAkw==}
+  '@kmamal/sdl@0.10.13':
+    resolution: {integrity: sha512-G6he5M4rPwquE8NNbaznx6kn62nv6sYjqAfTej8mB2WfUJO3T26Z7fwzGYD7i9iPwygjo1vsQ9ufY/C6xQ/yVw==}
 
   '@napi-rs/canvas-android-arm64@0.1.67':
     resolution: {integrity: sha512-W+3DFG5h0WU8Vqqb3W5fNmm5/TPH5ECZRinQDK4CAKFSUkc4iZcDwrmyFG9sB4KdHazf1mFVHCpEeVMO6Mk6Zg==}
@@ -1791,7 +1791,7 @@ snapshots:
       globby: 14.0.2
       tar: 6.2.1
 
-  '@kmamal/sdl@0.10.12':
+  '@kmamal/sdl@0.10.13':
     dependencies:
       tar: 7.4.3
 
