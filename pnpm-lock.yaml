@@ -12,11 +12,11 @@ importers:
         specifier: ^4.0.7
         version: 4.0.7(typescript@5.7.3)
       '@kmamal/gl':
-        specifier: 9.0.1
-        version: 9.0.1
+        specifier: 9.1.0
+        version: 9.1.0
       '@kmamal/sdl':
-        specifier: 0.10.14
-        version: 0.10.14
+        specifier: 0.11.1
+        version: 0.11.1
       '@napi-rs/canvas':
         specifier: ^0.1.66
         version: 0.1.67
@@ -351,16 +351,16 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@kmamal/gl@9.0.1':
-    resolution: {integrity: sha512-SezVO3KiKOx24wH0uMYWUWbncrpEnmPCDczR/RqDM6G06sRYYgLw3l7nESKEdCDgN/b4ZrL7gZPMZvow61a6xA==}
+  '@kmamal/gl@9.1.0':
+    resolution: {integrity: sha512-7qdu0wn5cPIyAPNNFYch5HGWZ2V2qACMWwyioB35lvqqo9i85Tbio2ti/Vbo/rcjQ39s/JIlzckci1+n0it1qQ==}
     engines: {node: '>=18.0.0'}
 
   '@kmamal/packager@0.2.3':
     resolution: {integrity: sha512-WOjUBZTRASYdsutFfEenz+DeA4NsNCpaOT4aU+5b5nODfTbND5u6YEm7KzY53QlOSxxTR3nl7uFoHwoZ3GaXgw==}
     hasBin: true
 
-  '@kmamal/sdl@0.10.14':
-    resolution: {integrity: sha512-14orJX7VmyXK6ozUBqKobo7ZHmAmrJFLgMnQmU/tnuiLJQP2k954xBhETb727J9Q1QUCXSFDjV3+J8uImw3StQ==}
+  '@kmamal/sdl@0.11.1':
+    resolution: {integrity: sha512-qeg/lurc3YQGn+uqVRo8m7h/ofiOgh3gUEtvti39OcZVGUmFFDzxfJNmRnfJaXbGlxU1aD9Z2kIfE0V0J1zayA==}
 
   '@napi-rs/canvas-android-arm64@0.1.67':
     resolution: {integrity: sha512-W+3DFG5h0WU8Vqqb3W5fNmm5/TPH5ECZRinQDK4CAKFSUkc4iZcDwrmyFG9sB4KdHazf1mFVHCpEeVMO6Mk6Zg==}
@@ -1770,7 +1770,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@kmamal/gl@9.0.1':
+  '@kmamal/gl@9.1.0':
     dependencies:
       bit-twiddle: 1.0.2
       glsl-tokenizer: 2.1.5
@@ -1789,7 +1789,7 @@ snapshots:
       globby: 14.0.2
       tar: 6.2.1
 
-  '@kmamal/sdl@0.10.14':
+  '@kmamal/sdl@0.11.1':
     dependencies:
       node-addon-api: 8.3.1
       node-gyp: 11.1.0
