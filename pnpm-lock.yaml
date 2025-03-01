@@ -31,7 +31,7 @@ importers:
         version: 5.2.0
       node-web-audio-api:
         specifier: ^1.0.1
-        version: 1.0.1
+        version: 1.0.2
       objecs:
         specifier: ^0.0.26
         version: 0.0.26
@@ -1129,8 +1129,8 @@ packages:
     engines: {node: ^18.17.0 || >=20.5.0}
     hasBin: true
 
-  node-web-audio-api@1.0.1:
-    resolution: {integrity: sha512-evnkBrcZvPBjc3mMWe/U2/xxPQSYturn0HYaKS31Yqyz4ifGb89hFxrCqQYOZqMnEo2f64W9s7lFmDEhjVXAvg==}
+  node-web-audio-api@1.0.2:
+    resolution: {integrity: sha512-i+BY1acEtTNXaHTZjAV3SrO3A/RQX1F8iTL6Lors2l4dymdHIDkbFF6NafjnEqctboE9a6ns9qZcxw1FjZbt4A==}
     engines: {node: '>= 14'}
 
   nopt@8.1.0:
@@ -2519,7 +2519,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  node-web-audio-api@1.0.1:
+  node-web-audio-api@1.0.2:
     dependencies:
       caller: 1.1.0
       node-fetch: 3.3.2
