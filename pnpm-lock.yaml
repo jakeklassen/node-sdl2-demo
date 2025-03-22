@@ -30,8 +30,8 @@ importers:
         specifier: ^5.2.0
         version: 5.2.0
       node-web-audio-api:
-        specifier: ^1.0.1
-        version: 1.0.3
+        specifier: ^1.0.4
+        version: 1.0.4
       objecs:
         specifier: ^0.0.26
         version: 0.0.26
@@ -46,8 +46,8 @@ importers:
         specifier: ^0.2.3
         version: 0.2.3
       '@types/node':
-        specifier: ^22.13.1
-        version: 22.13.10
+        specifier: ^22.13.11
+        version: 22.13.11
       typescript:
         specifier: ^5.7.3
         version: 5.8.2
@@ -562,8 +562,8 @@ packages:
   '@types/node@10.17.60':
     resolution: {integrity: sha512-F0KIgDJfy2nA3zMLmWGKxcH2ZVEtCZXHHdOQs2gSaQ27+lNeEfGxzkIw90aXswATX7AZ33tahPbzy6KAfUreVw==}
 
-  '@types/node@22.13.10':
-    resolution: {integrity: sha512-I6LPUvlRH+O6VRUqYOcMudhaIdUVWfsjnZavnsraHvpBwaEyMN29ry+0UVJhImYL16xsscu0aske3yA+uPOWfw==}
+  '@types/node@22.13.11':
+    resolution: {integrity: sha512-iEUCUJoU0i3VnrCmgoWCXttklWcvoCIx4jzcP22fioIVSdTmjgoEvmAO/QPw6TcS9k5FrNgn4w7q5lGOd1CT5g==}
 
   abbrev@3.0.0:
     resolution: {integrity: sha512-+/kfrslGQ7TNV2ecmQwMJj/B65g5KVq1/L3SGVZ3tCYGqlzFuFCGBZJtMP99wH3NpEUyAjn0zPdPUg0D+DwrOA==}
@@ -1123,8 +1123,8 @@ packages:
     engines: {node: ^18.17.0 || >=20.5.0}
     hasBin: true
 
-  node-web-audio-api@1.0.3:
-    resolution: {integrity: sha512-X3gJVaPT6ik1ILkdkx6qf10HwSjnOUZB2hcCKup+lHMt7ZW5JW21ofkF1LS5iFn6lSMqnoKGWwdh/XXR6mjjlg==}
+  node-web-audio-api@1.0.4:
+    resolution: {integrity: sha512-lzhqTlHeosL6FEx4DtnU5c9pzxoesCUsucigA34Z+D1lBG8GRbULUuw1UeY5KMptnJctIANLHXOCc/ZbWkcSAA==}
     engines: {node: '>= 14'}
 
   nopt@8.1.0:
@@ -1930,7 +1930,7 @@ snapshots:
 
   '@types/node@10.17.60': {}
 
-  '@types/node@22.13.10':
+  '@types/node@22.13.11':
     dependencies:
       undici-types: 6.20.0
 
@@ -2502,7 +2502,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  node-web-audio-api@1.0.3:
+  node-web-audio-api@1.0.4:
     dependencies:
       caller: 1.1.0
       node-fetch: 3.3.2
