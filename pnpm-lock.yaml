@@ -40,7 +40,7 @@ importers:
         version: 0.34.1
       type-fest:
         specifier: ^4.33.0
-        version: 4.40.0
+        version: 4.40.1
     devDependencies:
       '@kmamal/packager':
         specifier: ^0.2.3
@@ -1466,8 +1466,8 @@ packages:
     resolution: {integrity: sha512-G6zXWS1dLj6eagy6sVhOMQiLtJdxQBHIA9Z6HFUNLOlr6MFOgzV8wvmidtPONfPtEUv0uZsy77XJNzTAfwPDaA==}
     engines: {node: '>=16'}
 
-  type-fest@4.40.0:
-    resolution: {integrity: sha512-ABHZ2/tS2JkvH1PEjxFDTUWC8dB5OsIGZP4IFLhR293GqT5Y5qB1WwL2kMPYhQW9DVgVD8Hd7I8gjwPIf5GFkw==}
+  type-fest@4.40.1:
+    resolution: {integrity: sha512-9YvLNnORDpI+vghLU/Nf+zSv0kL47KbVJ1o3sKgoTefl6i+zebxbiDQWoe/oWWqPhIgQdRZRT1KA9sCPL810SA==}
     engines: {node: '>=16'}
 
   typedarray@0.0.6:
@@ -2887,7 +2887,7 @@ snapshots:
 
   type-fest@4.30.0: {}
 
-  type-fest@4.40.0: {}
+  type-fest@4.40.1: {}
 
   typedarray@0.0.6: {}
 
