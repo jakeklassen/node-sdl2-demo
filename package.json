@@ -13,7 +13,7 @@
 	"dependencies": {
 		"@jakeklassen/ecs": "^4.0.7",
 		"@kmamal/gl": "9.1.0",
-		"@kmamal/sdl": "0.11.7",
+		"@kmamal/sdl": "0.11.8",
 		"@napi-rs/canvas": "^0.1.72",
 		"canvas": "^3.1.1",
 		"execa": "^9.6.0",
