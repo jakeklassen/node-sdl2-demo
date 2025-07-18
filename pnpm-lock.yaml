@@ -15,8 +15,8 @@ importers:
         specifier: 9.1.0
         version: 9.1.0
       '@kmamal/sdl':
-        specifier: 0.11.8
-        version: 0.11.8
+        specifier: 0.11.9
+        version: 0.11.9
       '@napi-rs/canvas':
         specifier: ^0.1.72
         version: 0.1.74
@@ -376,8 +376,8 @@ packages:
     resolution: {integrity: sha512-WOjUBZTRASYdsutFfEenz+DeA4NsNCpaOT4aU+5b5nODfTbND5u6YEm7KzY53QlOSxxTR3nl7uFoHwoZ3GaXgw==}
     hasBin: true
 
-  '@kmamal/sdl@0.11.8':
-    resolution: {integrity: sha512-ctK9pSkoSRQYB47yaHf1yMJtr8RsLZFb1K+gaSBb8m439/Og69woGBcbpoe86WKh6GkGicBom56RqxUtkPx4sg==}
+  '@kmamal/sdl@0.11.9':
+    resolution: {integrity: sha512-rTGtrKTrkj5rwS2dWrcWpMcg85oQL3J4aK/yuxPMe4209D1K1wXK35nCBbWnvhnjZJfH74566qr7hxSROAwfww==}
 
   '@napi-rs/canvas-android-arm64@0.1.74':
     resolution: {integrity: sha512-aq5ode+9Z/ZR0H485dI2jdRdttg/hl9Ob+iPCt0nj+QFiirpxDrbUHKeTZWQWEtkWyC7vI5R2dMTbDINBfl9eg==}
@@ -1123,10 +1123,6 @@ packages:
   node-addon-api@7.1.1:
     resolution: {integrity: sha512-5m3bsyrjFWE1xf7nz7YXdN4udnVtXK6/Yfgn5qnahL6bCkf2yKt4k3nuTKAtT4r3IG8JNR2ncsIMdZuAzJjHQQ==}
 
-  node-addon-api@8.3.1:
-    resolution: {integrity: sha512-lytcDEdxKjGJPTLEfW4mYMigRezMlyJY8W4wxJK8zE533Jlb8L8dRuObJFWg2P+AuOIxoCgKF+2Oq4d4Zd0OUA==}
-    engines: {node: ^18 || ^20 || >= 21}
-
   node-domexception@1.0.0:
     resolution: {integrity: sha512-/jKZoMpw0F8GRwl4/eLROPA3cfcXtLApP0QzLmUT/HuPCZWyB7IY9ZrMeKw2O/nFIqPQB3PVM9aYm0F312AXDQ==}
     engines: {node: '>=10.5.0'}
@@ -1807,13 +1803,9 @@ snapshots:
       globby: 14.0.2
       tar: 6.2.1
 
-  '@kmamal/sdl@0.11.8':
+  '@kmamal/sdl@0.11.9':
     dependencies:
-      node-addon-api: 8.3.1
-      node-gyp: 11.1.0
       tar: 7.4.3
-    transitivePeerDependencies:
-      - supports-color
 
   '@napi-rs/canvas-android-arm64@0.1.74':
     optional: true
@@ -2500,8 +2492,6 @@ snapshots:
       semver: 7.7.2
 
   node-addon-api@7.1.1: {}
-
-  node-addon-api@8.3.1: {}
 
   node-domexception@1.0.0: {}
 
