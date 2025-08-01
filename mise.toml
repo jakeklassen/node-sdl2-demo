@@ -1,5 +1,5 @@
 [tools]
 python = "3.13.5"
-nodejs = "22.17.1"
+nodejs = "22.18.0"
 pnpm   = "10.14.0"
-node = "22.17.1"
+node = "22.18.0"
