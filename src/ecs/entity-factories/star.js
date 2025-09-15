@@ -1,10 +1,9 @@
 /**
  * @typedef StarFactoryOptions
  * @property {NonNullable<import("../entity.js").Entity['transform']>['position']} position
- * @property {World<import("../entity.js").Entity>} world
+ * @property {import("objecs").World<import("../entity.js").Entity>} world
  */
 
-import { World } from "objecs";
 import { rndFromList } from "../../lib/array.js";
 import { rndInt } from "../../lib/math.js";
 import { Pico8Colors } from "../constants.js";
@@ -49,7 +48,7 @@ export function starFactory({ position, world }) {
  * @property {number} areaWidth
  * @property {number} areaHeight
  * @property {number} count
- * @property {World<import("../entity.js").Entity>} world
+ * @property {import("objecs").World<import("../entity.js").Entity>} world
  */
 
 /**

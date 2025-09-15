@@ -1,8 +1,6 @@
-import { World } from "objecs";
-
 /**
  * @typedef MovementSystemOptions
- * @property {World<import("../entity.js").Entity>} world
+ * @property {import("objecs").World<import("../entity.js").Entity>} world
  */
 
 /**

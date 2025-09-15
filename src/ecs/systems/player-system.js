@@ -1,10 +1,9 @@
-import { World } from "objecs";
 import sdl from "@kmamal/sdl";
 import { Timer } from "../../lib/timer.js";
 
 /**
  * @typedef PlayerSystemOptions
- * @property {World<import("../entity.js").Entity>} world
+ * @property {import("objecs").World<import("../entity.js").Entity>} world
  */
 
 /**

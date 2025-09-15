@@ -1,9 +1,8 @@
-import { World } from "objecs";
 import { rndInt } from "../../lib/math.js";
 
 /**
  * @typedef StarfieldSystemOptions
- * @property {World<import("../entity.js").Entity>} world
+ * @property {import("objecs").World<import("../entity.js").Entity>} world
  */
 
 /**

@@ -1,9 +1,8 @@
 import { loadImage } from "canvas";
-import { World } from "objecs";
 
 /**
  * @typedef SpriteRenderingSystemOptions
- * @property {World<import("../entity.js").Entity>} world
+ * @property {import("objecs").World<import("../entity.js").Entity>} world
  * @property {import('canvas').CanvasRenderingContext2D} context
  */
 

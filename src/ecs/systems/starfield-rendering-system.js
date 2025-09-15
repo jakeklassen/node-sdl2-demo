@@ -1,9 +1,6 @@
-import { World } from "objecs";
-import { hexColorToRGBA } from "../../lib/color.js";
-
 /**
  * @typedef StarfieldRenderingSystemOptions
- * @property {World<import("../entity.js").Entity>} world
+ * @property {import("objecs").World<import("../entity.js").Entity>} world
  * @property {import('canvas').CanvasRenderingContext2D} context
  */
 
