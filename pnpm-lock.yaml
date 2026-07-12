@@ -30,8 +30,8 @@ importers:
         specifier: ^5.2.0
         version: 5.3.0
       node-web-audio-api:
-        specifier: ^1.0.4
-        version: 1.0.9
+        specifier: ^2.0.0
+        version: 2.0.0
       objecs:
         specifier: ^0.2.0
         version: 0.2.0
@@ -1186,9 +1186,9 @@ packages:
     engines: {node: ^18.17.0 || >=20.5.0}
     hasBin: true
 
-  node-web-audio-api@1.0.9:
-    resolution: {integrity: sha512-udyabeRtRcnxUx4XWvvSAvwTqsAUHAawiVWg0IHFSUAPD8m+5cAAL6RPXgF7BOHxPmJq2s77ceBF4tlG45K0/Q==}
-    engines: {node: '>= 14'}
+  node-web-audio-api@2.0.0:
+    resolution: {integrity: sha512-I8r10N26N4ssu7KbL70ywWZIVu5F6eSas/DO1wHWwLjiBSo7TKSOXgCVd0mfEvrewDY5vkmqGCUL3ix/iMr4yA==}
+    engines: {node: '>= 22'}
 
   nopt@8.1.0:
     resolution: {integrity: sha512-ieGu42u/Qsa4TFktmaKEwM6MQH0pOWnaB3htzh0JRtx84+Mebc0cbZYN5bC+6WTZ4+77xrL9Pn5m7CV6VIkV7A==}
@@ -1580,9 +1580,9 @@ packages:
   webidl-conversions@4.0.2:
     resolution: {integrity: sha512-YQ+BmxuTgd6UXZW3+ICGfyqRyHXVlD5GtQr5+qjiNW7bF0cqrzX500HVXPBOvgXb5YnzDd+h0zqyv61KUD7+Sg==}
 
-  webidl-conversions@7.0.0:
-    resolution: {integrity: sha512-VwddBukDzu71offAQR975unBIGqfKZpM+8ZX6ySk8nYhVoo5CYaZyzt3YBvYtRtO+aoGlqxPg/B87NGVZ/fu6g==}
-    engines: {node: '>=12'}
+  webidl-conversions@8.0.1:
+    resolution: {integrity: sha512-BMhLD/Sw+GbJC21C/UgyaZX41nPt8bUTg+jWyDeg7e7YN4xOM05YPSIXceACnXVtqyEw/LMClUQMtMZ+PGGpqQ==}
+    engines: {node: '>=20'}
 
   whatwg-url@7.1.0:
     resolution: {integrity: sha512-WUu7Rg1DroM7oQvGWfOiAK21n74Gg+T4elXEQYkOhtyLeWiJFoOGLXPKI/9gzIie9CtwVLm8wtw6YJdKyxSjeg==}
@@ -2591,11 +2591,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  node-web-audio-api@1.0.9:
+  node-web-audio-api@2.0.0:
     dependencies:
       caller: 1.1.0
       node-fetch: 3.3.2
-      webidl-conversions: 7.0.0
+      webidl-conversions: 8.0.1
 
   nopt@8.1.0:
     dependencies:
@@ -3004,7 +3004,7 @@ snapshots:
 
   webidl-conversions@4.0.2: {}
 
-  webidl-conversions@7.0.0: {}
+  webidl-conversions@8.0.1: {}
 
   whatwg-url@7.1.0:
     dependencies:
