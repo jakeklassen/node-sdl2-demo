@@ -34,7 +34,7 @@ importers:
         version: 2.0.0
       objecs:
         specifier: ^0.2.0
-        version: 0.2.0
+        version: 0.2.1
       sharp:
         specifier: ^0.35.0
         version: 0.35.3(@types/node@22.19.21)
@@ -1199,8 +1199,8 @@ packages:
     resolution: {integrity: sha512-9qny7Z9DsQU8Ou39ERsPU4OZQlSTP47ShQzuKZ6PRXpYLtIFgl/DEBYEXKlvcEa+9tHVcK8CF81Y2V72qaZhWA==}
     engines: {node: '>=18'}
 
-  objecs@0.2.0:
-    resolution: {integrity: sha512-lsYs4WVMV6x4WlNJc144TwKZdzj0VdfanVxFCVQht5X1UEGOXRqDb/tXzbrsMwqkQEYLL0WiIO/gn7u4JzHRog==}
+  objecs@0.2.1:
+    resolution: {integrity: sha512-/toOIkiCDl6xMpEtIGZ+fKZM2g6aPbwIJwBZbwuo/b8b3czwKTBcEMx9hVtdcmuBAHfvuYxBKjgSicEdilgw8A==}
 
   object-assign@4.1.1:
     resolution: {integrity: sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==}
@@ -2606,7 +2606,7 @@ snapshots:
       path-key: 4.0.0
       unicorn-magic: 0.3.0
 
-  objecs@0.2.0: {}
+  objecs@0.2.1: {}
 
   object-assign@4.1.1: {}
 
