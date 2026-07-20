@@ -1,5 +1,66 @@
 # Node.js SDL2
 
+## TypeScript, without a build step
+
+Sources are `.ts` and run **directly on Node** — there is no compile step and no
+bundler. Node 26 executes them via native **type stripping**, so `node src/…​.ts`
+just works, and the packager ships the `.ts` files as-is.
+
+Two consequences worth knowing:
+
+- **Relative imports use real `.ts` extensions** (`import { x } from "./lib/foo.ts"`).
+  Node resolves the literal path — it will not rewrite `.js` to `.ts` for you.
+- **Only erasable syntax is allowed.** Node strips types, it does not transform
+  them, so no `enum`, `namespace`, parameter properties, or decorators.
+  `tsconfig.json` sets `erasableSyntaxOnly: true` so `tsc` catches these at
+  typecheck time rather than letting them explode at runtime.
+
+`tsc` is used purely as a type checker (`noEmit`); it never produces output.
+
+### DOM globals leak in — the linter is what guards against them
+
+This is a Node project, so browser globals (`Image`, `document`, …) should not be
+in scope. `tsconfig.json` sets `"lib": ["ESNext"]` to say so, **but that does not
+actually exclude the DOM.** `node-web-audio-api`'s `index.d.ts` contains
+`/// <reference lib="dom" />`, and that directive unconditionally pulls
+`lib.dom.d.ts` into the program no matter what `lib` says. Nothing in tsconfig
+can override it.
+
+This is not academic: `neon-stress/index.ts` called `new Image()` without
+importing it, and typechecked cleanly for exactly this reason — while being a
+guaranteed `ReferenceError: Image is not defined` at runtime, since Node has no
+global `Image`. The fix was to import `Image` from `canvas`.
+
+So the real guard is **oxlint**, which has its own environment model: `.oxlintrc.json`
+enables `no-undef` with `env: { builtin, node }` and no browser env, which does
+flag browser globals. Keep that rule on.
+
+Note the fix is always to **import** the real thing (`import { Image } from "canvas"`),
+never to declare a global that makes the DOM version resolve. Node has no global
+`Image` at runtime, so any such declaration would be a lie about the runtime — it
+would silence the type error while leaving the `ReferenceError` in place.
+
+Relatedly, `scripts/build.ts` uses explicit named imports from `zx` rather than
+`import "zx/globals"`. The globals form would need every injected name (`$`, `echo`,
+`fs`, `path`, …) declared in lint config and kept in sync by hand; importing what
+we use needs no configuration at all.
+
+## Scripts
+
+| Script            | What it does                                                   |
+| ----------------- | -------------------------------------------------------------- |
+| `pnpm typecheck`  | `tsc --noEmit` — types only, emits nothing                     |
+| `pnpm lint`       | `oxlint --type-aware` (type-aware rules via `oxlint-tsgolint`) |
+| `pnpm lint:fix`   | same, applying autofixes                                       |
+| `pnpm format`     | `oxfmt --check .` — fails if anything is unformatted           |
+| `pnpm format:fix` | `oxfmt .` — formats in place                                   |
+| `pnpm build`      | Bundles a standalone app into `dist/` (see below)              |
+
+Formatting is [oxfmt](https://www.npmjs.com/package/oxfmt); its `.oxfmtrc.json`
+was generated with `oxfmt --migrate=prettier` from the old `.prettierrc`, so the
+house style (tabs, `trailingComma: all`, semicolons) is unchanged. Prettier is no
+longer used.
+
 ## 3D / WebGL: intentionally not used
 
 This project has **no 3D dependency**, on purpose. `@kmamal/gl` (WebGL) and
@@ -27,7 +88,7 @@ and whether `@kmamal/gpu` has fixed `createView()`.
 
 ## Packaging the app (`pnpm build`)
 
-`pnpm build` runs [`scripts/build.js`](./scripts/build.js), a small local packager
+`pnpm build` runs [`scripts/build.ts`](./scripts/build.ts), a small local packager
 that bundles a standalone Node.js runtime + this app + its production
 `node_modules` into `dist/<name>-<version>-<platform>-<arch>/` with a launcher
 script. Run the result with `./dist/<name>-<version>-<platform>-<arch>/<name>`.
@@ -51,7 +112,6 @@ What it does:
 Limitations: builds for the host platform/arch only (native modules compile with
 the local toolchain — no cross-compiling), supports linux/macOS, and outputs an
 unzipped directory.
-
 
 ## Canvas Libs to Try
 

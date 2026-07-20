@@ -3,9 +3,14 @@
 	"version": "1.0.0",
 	"description": "",
 	"type": "module",
-	"main": "src/neon/index.js",
+	"main": "src/neon/index.ts",
 	"scripts": {
-		"build": "zx scripts/build.js"
+		"build": "zx scripts/build.ts",
+		"typecheck": "tsc --noEmit",
+		"lint": "oxlint --type-aware",
+		"lint:fix": "oxlint --type-aware --fix",
+		"format": "oxfmt --check .",
+		"format:fix": "oxfmt ."
 	},
 	"keywords": [],
 	"author": "",
@@ -23,8 +28,12 @@
 		"type-fest": "^5.8.0"
 	},
 	"devDependencies": {
+		"@types/fs-extra": "^11.0.4",
 		"@types/node": "^26.1.1",
-		"typescript": "^6.0.3",
+		"oxfmt": "^0.59.0",
+		"oxlint": "^1.74.0",
+		"oxlint-tsgolint": "^0.25.0",
+		"typescript": "^7.0.2",
 		"zx": "^8.7.2"
 	}
 }

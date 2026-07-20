@@ -8,12 +8,9 @@
 		"target": "ESNext",
 		"module": "NodeNext",
 		"allowImportingTsExtensions": true,
-		"verbatimModuleSyntax": true
+		"verbatimModuleSyntax": true,
+		"erasableSyntaxOnly": true,
+		"lib": ["ESNext"]
 	},
-	"include": [
-		"src/**/*.js",
-		"src/**/*.ts",
-		"scripts/**/*.js",
-		"src/neon-stress/lib/vector2.js"
-	]
+	"include": ["src/**/*.ts", "scripts/**/*.ts"]
 }

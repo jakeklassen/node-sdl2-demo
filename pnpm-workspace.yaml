@@ -1,5 +1,5 @@
 allowBuilds:
-  '@kmamal/sdl': true
+  "@kmamal/sdl": true
   canvas: true
   esbuild: true
   ffmpeg-static: true
