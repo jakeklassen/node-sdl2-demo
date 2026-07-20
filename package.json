@@ -12,21 +12,19 @@
 	"license": "ISC",
 	"dependencies": {
 		"@jakeklassen/ecs": "^4.0.7",
-		"@kmamal/gl": "9.1.0",
 		"@kmamal/sdl": "0.11.13",
-		"@napi-rs/canvas": "^1.0.0",
+		"@napi-rs/canvas": "^1.0.2",
 		"canvas": "^3.1.1",
-		"execa": "^9.6.0",
+		"execa": "^10.0.0",
 		"ffmpeg-static": "^5.2.0",
 		"node-web-audio-api": "^2.0.0",
-		"objecs": "^0.2.0",
-		"sharp": "^0.35.0",
-		"type-fest": "^5.0.0"
+		"objecs": "^0.2.1",
+		"sharp": "^0.35.3",
+		"type-fest": "^5.8.0"
 	},
 	"devDependencies": {
-		"@kmamal/packager": "^0.2.3",
-		"@types/node": "^22.17.0",
-		"typescript": "^5.9.2",
+		"@types/node": "^26.1.1",
+		"typescript": "^6.0.3",
 		"zx": "^8.7.2"
 	}
 }
