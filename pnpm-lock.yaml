@@ -28,7 +28,7 @@ importers:
         version: 5.3.0
       node-web-audio-api:
         specifier: ^2.0.0
-        version: 2.0.0
+        version: 2.1.0
       objecs:
         specifier: ^0.2.1
         version: 0.2.1
@@ -1335,8 +1335,8 @@ packages:
     resolution: {integrity: sha512-dRB78srN/l6gqWulah9SrxeYnxeddIG30+GOqK/9OlLVyLg3HPnr6SqOWTWOXKRwC2eGYCkZ59NNuSgvSrpgOA==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
-  node-web-audio-api@2.0.0:
-    resolution: {integrity: sha512-I8r10N26N4ssu7KbL70ywWZIVu5F6eSas/DO1wHWwLjiBSo7TKSOXgCVd0mfEvrewDY5vkmqGCUL3ix/iMr4yA==}
+  node-web-audio-api@2.1.0:
+    resolution: {integrity: sha512-5aI3ciSs60HlyybHJzPyf8smok8gH9c0Q6n1gjDQGJqcJLafjlPfn78gIkOljVXlS/8l/et3nUQyofsuzf9Tyw==}
     engines: {node: '>= 22'}
 
   npm-run-path@6.0.0:
@@ -2562,7 +2562,7 @@ snapshots:
       fetch-blob: 3.2.0
       formdata-polyfill: 4.0.10
 
-  node-web-audio-api@2.0.0:
+  node-web-audio-api@2.1.0:
     dependencies:
       caller: 1.1.0
       node-fetch: 3.3.2
