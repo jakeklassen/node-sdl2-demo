@@ -2,3 +2,10 @@
 python = "3.14.7"
 pnpm = "11.21.0"
 node = "26.7.0"
+
+[settings]
+# Python is only here so node-gyp can build `canvas` from source. Use the
+# precompiled python-build-standalone builds rather than compiling CPython,
+# which avoids optional stdlib modules being silently skipped when system
+# dev headers are missing.
+python.compile = false
