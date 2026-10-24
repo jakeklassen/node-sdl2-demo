@@ -22,7 +22,7 @@ importers:
         version: 3.2.3
       execa:
         specifier: ^10.0.1
-        version: 10.2.0
+        version: 10.2.1
       ffmpeg-static:
         specifier: ^5.2.0
         version: 5.3.0
@@ -1164,8 +1164,8 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
-  execa@10.2.0:
-    resolution: {integrity: sha512-j1pFOVxaybMVCTNHSBuISL2KQcDS3KIE1wBmUp4n2X+1FgaQI2ZDJVy9TYxDyMCzYojRIMh9O8X/UoWZtxTJdw==}
+  execa@10.2.1:
+    resolution: {integrity: sha512-/Bofl3ZBh2Q4/PG0W63qFzP5vDAypi8Zc90UWTBzaDNIYiX7apPOd0N6L8hG8CojUdq4V51adu8BObP+iVsSTw==}
     engines: {node: '>=22'}
 
   expand-template@2.0.3:
@@ -2405,7 +2405,7 @@ snapshots:
       '@esbuild/win32-ia32': 0.24.2
       '@esbuild/win32-x64': 0.24.2
 
-  execa@10.2.0:
+  execa@10.2.1:
     dependencies:
       '@sindresorhus/merge-streams': 4.0.0
       figures: 6.1.0
