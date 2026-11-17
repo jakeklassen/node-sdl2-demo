@@ -25,7 +25,7 @@
 		"node-web-audio-api": "^2.1.0",
 		"objecs": "^0.2.1",
 		"sharp": "^0.35.3",
-		"type-fest": "^5.8.0"
+		"type-fest": "^6.0.0"
 	},
 	"devDependencies": {
 		"@types/fs-extra": "^11.0.4",
